@@ -113,133 +113,43 @@ Par exemple, certains utilisateurs vont privilégier :
 L’application doit donc laisser une liberté de choix importante, être compréhensible et signaler clairement lorsqu’une information n’est pas disponible.
 ## Scénarios d'usage et impact
 
-Afin d'étudier des services Web similaires à AlimCheck, nous avons identifié plusieurs
-applications permettant de rechercher ou de consulter des informations sur des
-produits alimentaires :
+Nous avons retenu deux scénarios représentant deux usages différents d'un service
+de recherche d'informations alimentaires.
 
-- Open Food Facts
-- The Open Food Repo
-- FatSecret
+### Scénario 1 : Rechercher un produit précis
 
-Nous avons défini plusieurs scénarios représentant des cas d'utilisation différents.
-L'objectif est d'exécuter des parcours comparables sur plusieurs services concurrents
-afin d'évaluer ensuite leur impact environnemental.
+**Cas étudié :** rechercher un produit connu, par exemple **Nutella**, afin de consulter
+sa composition et ses informations nutritionnelles.
 
+1. Rechercher **Nutella** par son nom ou sa marque.
+2. Sélectionner le produit dans les résultats.
+3. Consulter les **ingrédients**, les **allergènes** et les **valeurs nutritionnelles**.
+4. Revenir à la liste des résultats.
 
-### Scénario 1 : Rechercher un produit précis par son nom ou sa marque
+### Scénario 2 : Comparer des produits selon leurs caractéristiques
 
-Ce scénario représente le cas d'un utilisateur qui connaît déjà le produit et
-souhaite simplement consulter ses informations.
+**Cas étudié :** rechercher une catégorie de produits, par exemple **céréales**,
+afin de comparer plusieurs produits selon leurs caractéristiques.
 
-Exemple : rechercher **Nutella**.
+1. Rechercher la catégorie **céréales**.
+2. Consulter la liste des produits proposés.
+3. Sélectionner un premier produit et consulter ses **nutriments**, **ingrédients**
+   et **labels/certifications disponibles**.
+4. Revenir à la liste.
+5. Sélectionner un deuxième produit.
+6. Comparer les informations disponibles : **sucre, protéines, ingrédients,
+   allergènes, bio ou autres labels**.
 
-Parcours :
+## Impact de l'exécution des scénarios auprès de différents services concurrents
 
-1. L'utilisateur arrive sur la page d'accueil.
-2. Il utilise la barre de recherche.
-3. Il saisit le nom du produit ou de la marque.
-4. Il ouvre un produit dans la liste des résultats.
-5. Il consulte les ingrédients et les informations nutritionnelles.
-6. Il revient à la liste des résultats.
+L'EcoIndex d'une page (de A à G) est calculé en fonction du positionnement de cette page par rapport à des pages Web de référence, selon plusieurs critères, notamment :
 
-Services testés :
+- le nombre de requêtes lancées ;
+- le poids des téléchargements ;
+- le nombre d'éléments du document.
 
-- Open Food Facts
-- The Open Food Repo
-- FatSecret
+Dans notre cas, nous avons choisi de comparer l'impact de nos scénarios sur plusieurs services Web proposant des fonctionnalités proches de celles d'AlimCheck : **Open Food Facts** et **FatSecret**.
 
-
-### Scénario 2 : Rechercher un produit à partir d'une catégorie
-
-Ce scénario représente le cas d'un utilisateur qui ne connaît pas encore
-le produit exact qu'il souhaite choisir.
-
-Exemple : rechercher **chocolat noir**.
-
-Parcours :
-
-1. L'utilisateur arrive sur la page d'accueil.
-2. Il recherche une catégorie de produits.
-3. Il consulte les différents résultats.
-4. Il sélectionne un produit.
-5. Il consulte ses caractéristiques principales.
-6. Il revient à la liste des résultats.
-
-Services testés :
-
-- Open Food Facts
-- The Open Food Repo
-- FatSecret
+L'objectif est de comparer ces différents services selon plusieurs cas d'usage, afin d'identifier les choix de conception qui peuvent augmenter ou réduire leur impact environnemental.
 
 
-### Scénario 3 : Rechercher un produit selon sa composition
-
-Ce scénario représente le cas d'un utilisateur qui souhaite vérifier la présence
-ou l'absence d'un ingrédient ou rechercher un produit correspondant à un critère
-alimentaire particulier.
-
-Exemple : rechercher un produit **sans huile de palme** ou consulter la présence
-d'un ingrédient particulier.
-
-Parcours :
-
-1. L'utilisateur accède au service.
-2. Il effectue une recherche sur un type de produit.
-3. Il applique un critère lié à la composition lorsqu'il est disponible.
-4. Il consulte la liste des produits correspondants.
-5. Il ouvre la fiche d'un produit.
-6. Il vérifie les ingrédients.
-7. Il revient à la liste des résultats.
-
-Services testés :
-
-- Open Food Facts
-- The Open Food Repo
-
-Les fonctionnalités disponibles pouvant varier d'un service à l'autre,
-le parcours pourra être légèrement adapté tout en conservant le même objectif.
-
-
-### Scénario 4 : Consulter les informations nutritionnelles
-
-Ce scénario représente le cas d'un utilisateur qui souhaite comparer les qualités
-nutritionnelles de plusieurs produits.
-
-Exemple : comparer la quantité de sucre ou de protéines de plusieurs céréales.
-
-Parcours :
-
-1. L'utilisateur recherche une catégorie de produits.
-2. Il ouvre un premier produit.
-3. Il consulte ses valeurs nutritionnelles.
-4. Il revient à la liste des résultats.
-5. Il ouvre un deuxième produit.
-6. Il compare les valeurs nutritionnelles disponibles.
-
-Services testés :
-
-- Open Food Facts
-- FatSecret
-
-
-### Impact de l'exécution des scénarios auprès de différents services concurrents
-
-Pour estimer l'impact numérique des différents services, nous avons utilisé EcoIndex / GreenIT Analysis.
-
-Les indicateurs pris en compte sont notamment :
-
-- le nombre de requêtes ;
-- la quantité de données transférées ;
-- la complexité du DOM ;
-- le score EcoIndex ;
-- la classe environnementale.
-
-## Conclusion
-
-AlimCheck est un service numérique qui vise à améliorer l’accès à l’information alimentaire et à faciliter la comparaison entre produits.
-
-Son utilité sociale repose sur l’aide apportée aux consommateurs dans leurs choix alimentaires, tout en prenant en compte leurs préférences, leurs contraintes et certains critères de qualité.
-
-Cependant, comme tout service numérique, il possède aussi un impact environnemental et peut entraîner certains effets indirects.
-
-L’enjeu est donc de concevoir une application utile, simple et légère, afin que son bénéfice social justifie son coût écologique.
