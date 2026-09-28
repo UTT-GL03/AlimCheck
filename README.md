@@ -111,6 +111,128 @@ Par exemple, certains utilisateurs vont privilégier :
 - ou encore un critère environnemental.
 
 L’application doit donc laisser une liberté de choix importante, être compréhensible et signaler clairement lorsqu’une information n’est pas disponible.
+## Scénarios d'usage et impact
+
+Afin d'étudier des services Web similaires à AlimCheck, nous avons identifié plusieurs
+applications permettant de rechercher ou de consulter des informations sur des
+produits alimentaires :
+
+- Open Food Facts
+- The Open Food Repo
+- FatSecret
+
+Nous avons défini plusieurs scénarios représentant des cas d'utilisation différents.
+L'objectif est d'exécuter des parcours comparables sur plusieurs services concurrents
+afin d'évaluer ensuite leur impact environnemental.
+
+
+### Scénario 1 : Rechercher un produit précis par son nom ou sa marque
+
+Ce scénario représente le cas d'un utilisateur qui connaît déjà le produit et
+souhaite simplement consulter ses informations.
+
+Exemple : rechercher **Nutella**.
+
+Parcours :
+
+1. L'utilisateur arrive sur la page d'accueil.
+2. Il utilise la barre de recherche.
+3. Il saisit le nom du produit ou de la marque.
+4. Il ouvre un produit dans la liste des résultats.
+5. Il consulte les ingrédients et les informations nutritionnelles.
+6. Il revient à la liste des résultats.
+
+Services testés :
+
+- Open Food Facts
+- The Open Food Repo
+- FatSecret
+
+
+### Scénario 2 : Rechercher un produit à partir d'une catégorie
+
+Ce scénario représente le cas d'un utilisateur qui ne connaît pas encore
+le produit exact qu'il souhaite choisir.
+
+Exemple : rechercher **chocolat noir**.
+
+Parcours :
+
+1. L'utilisateur arrive sur la page d'accueil.
+2. Il recherche une catégorie de produits.
+3. Il consulte les différents résultats.
+4. Il sélectionne un produit.
+5. Il consulte ses caractéristiques principales.
+6. Il revient à la liste des résultats.
+
+Services testés :
+
+- Open Food Facts
+- The Open Food Repo
+- FatSecret
+
+
+### Scénario 3 : Rechercher un produit selon sa composition
+
+Ce scénario représente le cas d'un utilisateur qui souhaite vérifier la présence
+ou l'absence d'un ingrédient ou rechercher un produit correspondant à un critère
+alimentaire particulier.
+
+Exemple : rechercher un produit **sans huile de palme** ou consulter la présence
+d'un ingrédient particulier.
+
+Parcours :
+
+1. L'utilisateur accède au service.
+2. Il effectue une recherche sur un type de produit.
+3. Il applique un critère lié à la composition lorsqu'il est disponible.
+4. Il consulte la liste des produits correspondants.
+5. Il ouvre la fiche d'un produit.
+6. Il vérifie les ingrédients.
+7. Il revient à la liste des résultats.
+
+Services testés :
+
+- Open Food Facts
+- The Open Food Repo
+
+Les fonctionnalités disponibles pouvant varier d'un service à l'autre,
+le parcours pourra être légèrement adapté tout en conservant le même objectif.
+
+
+### Scénario 4 : Consulter les informations nutritionnelles
+
+Ce scénario représente le cas d'un utilisateur qui souhaite comparer les qualités
+nutritionnelles de plusieurs produits.
+
+Exemple : comparer la quantité de sucre ou de protéines de plusieurs céréales.
+
+Parcours :
+
+1. L'utilisateur recherche une catégorie de produits.
+2. Il ouvre un premier produit.
+3. Il consulte ses valeurs nutritionnelles.
+4. Il revient à la liste des résultats.
+5. Il ouvre un deuxième produit.
+6. Il compare les valeurs nutritionnelles disponibles.
+
+Services testés :
+
+- Open Food Facts
+- FatSecret
+
+
+### Impact de l'exécution des scénarios auprès de différents services concurrents
+
+Pour estimer l'impact numérique des différents services, nous avons utilisé EcoIndex / GreenIT Analysis.
+
+Les indicateurs pris en compte sont notamment :
+
+- le nombre de requêtes ;
+- la quantité de données transférées ;
+- la complexité du DOM ;
+- le score EcoIndex ;
+- la classe environnementale.
 
 ## Conclusion
 
