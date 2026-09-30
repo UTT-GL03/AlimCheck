@@ -142,14 +142,42 @@ afin de comparer plusieurs produits selon leurs caractéristiques.
 
 ## Impact de l'exécution des scénarios auprès de différents services concurrents
 
-L'EcoIndex d'une page (de A à G) est calculé en fonction du positionnement de cette page par rapport à des pages Web de référence, selon plusieurs critères, notamment :
+L'EcoIndex d'une page est calculé en fonction de plusieurs indicateurs, notamment :
 
 - le nombre de requêtes lancées ;
 - le poids des téléchargements ;
-- le nombre d'éléments du document.
+- le nombre d'éléments du document (DOM).
 
-Dans notre cas, nous avons choisi de comparer l'impact de nos scénarios sur plusieurs services Web proposant des fonctionnalités proches de celles d'AlimCheck : **Open Food Facts** et **FatSecret**.
+Nous avons choisi de comparer l'impact de nos scénarios sur deux services proposant
+des fonctionnalités proches d'AlimCheck : **Open Food Facts** et **FatSecret**.
 
-L'objectif est de comparer ces différents services selon plusieurs cas d'usage, afin d'identifier les choix de conception qui peuvent augmenter ou réduire leur impact environnemental.
+| Service | Score (sur 100) | Classe | Détail des mesures |
+|---|---:|:---:|---|
+| Open Food Facts | 23,44 | F | [Voir les mesures](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
+| FatSecret | 59,08 | C | [Voir les mesures](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
 
+*Tab. 1 : Mesure de l'EcoIndex moyen des services de recherche d'informations alimentaires.*
+Les mesures montrent une différence importante entre les deux services étudiés.
+
+**FatSecret** obtient un EcoIndex moyen de **59,08/100**, contre seulement
+**23,44/100** pour **Open Food Facts**.
+
+Dans le détail, Open Food Facts présente en moyenne davantage de requêtes,
+un DOM beaucoup plus complexe et des pages plus lourdes que FatSecret.
+
+Open Food Facts compte environ **2239 éléments dans le DOM en moyenne**,
+contre environ **445 éléments** pour FatSecret.
+
+Le nombre moyen de requêtes est également plus élevé pour Open Food Facts,
+avec environ **115 requêtes par page**, contre environ **76** pour FatSecret.
+
+Le poids moyen des pages est d'environ **1298 Ko** pour Open Food Facts,
+contre environ **1049 Ko** pour FatSecret.
+
+Ces résultats montrent que la complexité du DOM, le nombre de requêtes et
+le poids des ressources ont une influence importante sur l'impact du service.
+
+Pour la conception d'AlimCheck, nous chercherons donc à limiter le nombre
+d'éléments affichés, les requêtes réseau et le poids des ressources afin
+de proposer un service plus sobre.
 
