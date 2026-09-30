@@ -1,0 +1,5 @@
+Date;Url;Nombre requêtes;Taille(kb);Taille du dom;GES (gCO2e);Eau (cl);ecoIndex;Note
+29/09/2026 09:18:32;"https://www.fatsecret.fr/calories-nutrition/nutella/nutella/1-portion";76;1204;512;1.90;2.85;55.08;C
+29/09/2026 09:17:13;"https://www.fatsecret.fr/calories-nutrition/search?q=nutella";72;1041;291;1.68;2.52;65.98;C
+29/09/2026 09:15:09;"https://fr.openfoodfacts.org/produit/3017624010701/nutella-ferrero";124;1350;2686;2.59;3.89;20.38;F
+29/09/2026 09:13:07;"https://fr.openfoodfacts.org/cgi/search.pl?search_terms=nutella&search_simple=1&action=process";104;1409;1718;2.48;3.72;25.95;E
