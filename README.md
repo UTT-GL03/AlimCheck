@@ -153,8 +153,8 @@ des fonctionnalités proches d'AlimCheck : **Open Food Facts** et **FatSecret**.
 
 | Service | Score (sur 100) | Classe | Détail des mesures |
 |---|---:|:---:|---|
-| Open Food Facts | 23,44 | F | [Voir les mesures](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
-| FatSecret | 59,08 | C | [Voir les mesures](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
+| Open Food Facts | 23,44 | F | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
+| FatSecret | 59,08 | C | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
 
 *Tab. 1 : Mesure de l'EcoIndex moyen des services de recherche d'informations alimentaires.*
 Les mesures montrent une différence importante entre les deux services étudiés.
