@@ -181,3 +181,54 @@ Pour la conception d'AlimCheck, nous chercherons donc à limiter le nombre
 d'éléments affichés, les requêtes réseau et le poids des ressources afin
 de proposer un service plus sobre.
 
+## Modèle économique
+
+Le modèle économique d'AlimCheck doit permettre de garantir la viabilité du service tout en restant cohérent avec notre objectif de sobriété numérique.
+
+### Structure du marché
+
+Le marché des services d'information alimentaire comporte plusieurs acteurs proposant des fonctionnalités proches : recherche de produits, informations nutritionnelles, ingrédients, allergènes ou comparaison entre produits.
+
+Cependant, ces services sont différenciés. Certains sont davantage orientés vers la nutrition, d'autres vers la composition des produits ou le suivi alimentaire.
+
+AlimCheck cherche à se différencier en regroupant dans une même application plusieurs critères de recherche : ingrédients, nutriments, allergènes, bio, certifications disponibles, préférences alimentaires et comparaison entre produits.
+
+Il existe également plusieurs produits de substitution : l'utilisateur peut consulter directement l'étiquette d'un produit, utiliser un moteur de recherche ou consulter une autre application alimentaire.
+
+Nous pouvons donc considérer qu'AlimCheck évolue dans un marché de **concurrence monopolistique** : plusieurs offreurs proposent des services proches mais différenciés.
+### Modèle retenu pour AlimCheck
+
+Nous avons choisi un modèle économique **freemium**, complété éventuellement par des financements publics.
+
+Le principe serait de conserver gratuitement les fonctionnalités essentielles afin que l'information alimentaire reste facilement accessible, tout en proposant certaines fonctionnalités avancées dans une offre Premium.
+
+| Fonctionnalité | Utilisateur gratuit | Utilisateur Premium |
+|---|---|---|
+| Recherche par nom, marque ou catégorie | Oui | Oui |
+| Consultation des ingrédients et nutriments | Oui | Oui |
+| Consultation des allergènes et labels disponibles | Oui | Oui |
+| Filtres avancés et multicritères | Limités | Oui |
+| Comparaison avancée de plusieurs produits | Limitée | Oui |
+| Sauvegarde des préférences | Non | Oui |
+| Favoris et historique | Limités ou absents | Oui |
+
+Le financement principal pourrait donc reposer sur les abonnements Premium.
+
+Des subventions publiques pourraient également compléter ce financement, notamment dans le cadre de projets liés à l'information des consommateurs, à la transition numérique ou à la consommation responsable.
+
+### Choix liés à l'impact environnemental
+
+Nous ne souhaitons pas baser principalement AlimCheck sur la publicité.
+
+Un modèle publicitaire pourrait encourager l'ajout de contenus, de traceurs et de ressources supplémentaires afin de capter davantage l'attention des utilisateurs, ce qui serait peu cohérent avec notre objectif de conception frugale.
+
+Nous ne souhaitons pas non plus baser le modèle économique sur la vente des données personnelles des utilisateurs.
+
+Notre modèle repose donc principalement sur :
+
+- un accès gratuit aux fonctionnalités essentielles ;
+- un abonnement Premium pour les fonctionnalités avancées ;
+- éventuellement des subventions publiques.
+
+Ce modèle permettrait de financer le développement, l'hébergement, la maintenance et les ressources humaines nécessaires au fonctionnement d'AlimCheck tout en limitant les fonctionnalités susceptibles d'augmenter inutilement son impact environnemental.
+
