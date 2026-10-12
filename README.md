@@ -231,4 +231,131 @@ Notre modèle repose donc principalement sur :
 - éventuellement des subventions publiques.
 
 Ce modèle permettrait de financer le développement, l'hébergement, la maintenance et les ressources humaines nécessaires au fonctionnement d'AlimCheck tout en limitant les fonctionnalités susceptibles d'augmenter inutilement son impact environnemental.
+## Maquette de l'interface et échantillon de données
 
+Au vu des services comparés, des scénarios retenus et des objectifs de sobriété
+définis précédemment, nous allons maintenant définir les principales ressources
+Web manipulées par AlimCheck.
+
+L'application ne sera pas pensée uniquement comme un ensemble de pages, mais comme
+un ensemble de ressources identifiées par des URI et reliées entre elles.
+
+### Types de ressources
+
+Les principales ressources de notre application sont :
+
+| Ressource | Patron d'URI | Exemple |
+|---|---|---|
+| Liste / recherche de produits | `/products` | `/products?q=nutella` |
+| Produit alimentaire | `/products/{id}` | `/products/3017620425035` |
+| Marque | `/brands/{name}` | `/brands/ferrero` |
+| Catégorie | `/categories/{name}` | `/categories/cereales` |
+| Ingrédient | `/ingredients/{name}` | `/ingredients/huile-de-palme` |
+| Label / certification | `/labels/{name}` | `/labels/bio` |
+
+La ressource principale est le **produit alimentaire**.
+
+Nous utiliserons de préférence un identifiant stable, par exemple le code-barres
+du produit, pour construire son URI.
+
+Exemple :
+
+`/products/3017620425035`
+
+Cette ressource correspond au produit lui-même, indépendamment de la manière
+dont il est affiché à l'utilisateur.
+### Recherche et filtrage
+
+La recherche correspond à une représentation filtrée de la collection de produits.
+
+Par exemple :
+
+`/products?q=nutella`
+
+permet de rechercher les produits correspondant au terme "Nutella".
+
+D'autres critères peuvent être ajoutés sous forme de paramètres :
+
+`/products?category=cereales&bio=true`
+
+ou :
+
+`/products?q=chocolat&sans_gluten=true`
+
+Ces paramètres permettent de conserver une URI compréhensible et directement
+liée aux critères choisis par l'utilisateur.
+### Représentations des ressources
+
+Une même ressource pourra avoir plusieurs représentations.
+
+Par exemple, un produit pourra être représenté :
+
+- en `text/html` pour l'affichage dans le navigateur ;
+- en `application/json` pour permettre l'accès aux données depuis une API.
+
+Exemple :
+
+`/products/3017620425035`
+
+peut représenter le même produit sous forme d'une page HTML ou de données JSON.
+
+La représentation HTML pourra afficher notamment :
+
+- le nom du produit ;
+- la marque ;
+- l'image du produit ;
+- les ingrédients ;
+- les allergènes ;
+- les valeurs nutritionnelles ;
+- les labels disponibles ;
+- les informations concernant le bio ou les certifications renseignées.
+
+La représentation JSON contiendra les mêmes informations sous une forme structurée.
+
+### Liens entre les ressources
+
+Les représentations contiendront des liens vers les autres ressources associées.
+
+Par exemple, depuis la fiche d'un produit, l'utilisateur pourra accéder :
+
+- à sa marque ;
+- à sa catégorie ;
+- à certains ingrédients ;
+- aux labels associés ;
+- à d'autres produits appartenant à la même catégorie.
+
+Exemple :
+
+Produit : `/products/3017620425035`
+
+peut contenir des liens vers :
+
+- `/brands/ferrero`
+- `/categories/pates-a-tartiner`
+- `/ingredients/noisettes`
+- `/labels/bio`
+
+Ainsi, l'utilisateur peut naviguer d'une ressource à une autre sans devoir
+effectuer systématiquement une nouvelle recherche.
+
+### Écrans principaux de la maquette
+
+La maquette comportera principalement trois types d'écrans :
+
+1. **Recherche de produits**
+   - barre de recherche ;
+   - recherche par nom, marque ou catégorie ;
+   - filtres principaux.
+
+2. **Liste des résultats**
+   - nom du produit ;
+   - marque ;
+   - quelques informations essentielles ;
+   - accès à la fiche détaillée.
+
+3. **Fiche produit**
+   - ingrédients ;
+   - allergènes ;
+   - valeurs nutritionnelles ;
+   - labels et certifications disponibles ;
+   - liens vers la marque et la catégorie.
