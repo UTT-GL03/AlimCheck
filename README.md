@@ -393,4 +393,3 @@ Elle est composée de :
 
 *Fig. 1 : Découpage de l'interface AlimCheck en composants React :
 (a) page de recherche et liste des produits ; (b) page de consultation d'un produit.*
-<img width="1659" height="948" alt="Schéma UI des pages produit" src="https://github.com/user-attachments/assets/9410f3d2-3f91-4c68-9850-ba9f7c4800e3" />
