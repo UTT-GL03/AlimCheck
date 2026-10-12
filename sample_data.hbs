@@ -1,0 +1,79 @@
+{
+  "products": [
+    {{#repeat min=20 max=30}}
+    {
+      "id": "{{int 1000000000000 9999999999999}}",
+      "name": "{{random
+        'Céréales chocolat'
+        'Flocons d avoine'
+        'Chocolat noir 70%'
+        'Pâte à tartiner'
+        'Yaourt nature'
+        'Biscuits au chocolat'
+        'Lait demi-écrémé'
+        'Jus d orange'
+        'Barre de céréales'
+        'Compote de pommes'
+      }}",
+
+      "brand": "{{random
+        'Nestlé'
+        'Kelloggs'
+        'Bjorg'
+        'Ferrero'
+        'Carrefour'
+        'Danone'
+        'Céréal Bio'
+        'Auchan'
+      }}",
+
+      "category": "{{random
+        'Céréales'
+        'Chocolat'
+        'Produits laitiers'
+        'Boissons'
+        'Biscuits'
+        'Pâtes à tartiner'
+        'Snacks'
+      }}",
+
+      "ingredients": [
+        "{{random 'avoine' 'sucre' 'cacao' 'lait' 'noisettes' 'blé' 'huile de tournesol' 'riz'}}",
+        "{{random 'sucre' 'chocolat' 'amandes' 'soja' 'maïs' 'beurre de cacao' 'lait'}}",
+        "{{random 'sel' 'vanille' 'cacao' 'noisettes' 'avoine' 'huile végétale'}}"
+      ],
+
+      "allergen": "{{random
+        'Aucun'
+        'Gluten'
+        'Lait'
+        'Fruits à coque'
+        'Soja'
+        'Arachides'
+      }}",
+
+      "nutrition": {
+        "energy_kcal": {{int 50 650}},
+        "proteins_g": {{int 0 30}},
+        "carbohydrates_g": {{int 0 90}},
+        "sugars_g": {{int 0 60}},
+        "fat_g": {{int 0 50}},
+        "salt_g": {{float 0 3 '0.00'}}
+      },
+
+      "organic": {{boolean}},
+      "vegan": {{boolean}},
+      "vegetarian": {{boolean}},
+      "glutenFree": {{boolean}},
+
+      "halalCertification": "{{random
+        'Certifié'
+        'Non certifié'
+        'Information non disponible'
+      }}",
+
+      "nutriScore": "{{random 'A' 'B' 'C' 'D' 'E'}}"
+    }
+    {{/repeat}}
+  ]
+}
