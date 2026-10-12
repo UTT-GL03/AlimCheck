@@ -359,4 +359,38 @@ La maquette comportera principalement trois types d'écrans :
    - valeurs nutritionnelles ;
    - labels et certifications disponibles ;
    - liens vers la marque et la catégorie.
+  
+     ### Découpage de l'interface en composants
+
+À partir de la maquette, nous avons identifié les principaux composants métiers
+réutilisables de l'application.
+
+Nous retenons deux types de pages principales.
+
+#### ProductListPage
+
+Cette page correspond à la recherche et à la consultation d'une liste de produits.
+
+Elle est composée de :
+
+- `AppHeader` : en-tête commun de l'application ;
+- `SearchBar` : recherche par nom, marque ou catégorie ;
+- `FilterPanel` : sélection des différents critères de filtrage ;
+- `ProductList` : affichage de la liste des produits correspondant à la recherche.
+
+#### ProductPage
+
+Cette page correspond à la consultation détaillée d'un produit.
+
+Elle est composée de :
+
+- `AppHeader` : en-tête commun réutilisé ;
+- `Breadcrumb` : navigation vers les ressources précédentes ;
+- `ProductContent` : informations principales du produit ;
+- `RelatedProducts` : produits similaires ou appartenant à la même catégorie.
+
+![Maquette des composants de l'interface](https://github.com/user-attachments/assets/9410f3d2-3f91-4c68-9850-ba9f7c4800e3)
+
+*Fig. 1 : Découpage de l'interface AlimCheck en composants React :
+(a) page de recherche et liste des produits ; (b) page de consultation d'un produit.*
 <img width="1659" height="948" alt="Schéma UI des pages produit" src="https://github.com/user-attachments/assets/9410f3d2-3f91-4c68-9850-ba9f7c4800e3" />
