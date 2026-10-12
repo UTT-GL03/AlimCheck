@@ -393,3 +393,14 @@ Elle est composée de :
 
 *Fig. 1 : Découpage de l'interface AlimCheck en composants React :
 (a) page de recherche et liste des produits ; (b) page de consultation d'un produit.*
+### Échantillon de données
+
+Afin de construire le prototype d'AlimCheck sans dépendre immédiatement d'une base
+de données externe, nous avons généré un échantillon de données avec `dummy-json`.
+
+Le modèle contient les principales informations manipulées par l'application :
+produits, marques, catégories, ingrédients, allergènes, valeurs nutritionnelles,
+labels et préférences alimentaires.
+
+- [Modèle de génération](./sample_data.hbs)
+- [Échantillon de données généré](./sample_data.json)
