@@ -359,3 +359,4 @@ La maquette comportera principalement trois types d'écrans :
    - valeurs nutritionnelles ;
    - labels et certifications disponibles ;
    - liens vers la marque et la catégorie.
+<img width="1659" height="948" alt="Schéma UI des pages produit" src="https://github.com/user-attachments/assets/9410f3d2-3f91-4c68-9850-ba9f7c4800e3" />
