@@ -1,35 +1,39 @@
 # AlimCheck
 
-AlimCheck est une application Web de recherche et de comparaison de produits alimentaires.  
-Elle permet aux utilisateurs de rechercher un aliment par son nom, sa marque ou sa catégorie, puis de consulter et comparer ses caractéristiques selon plusieurs critères : ingrédients, valeurs nutritionnelles, allergènes, présence d’additifs, certification bio, information halal, régime vegan/végétarien, sans gluten, sans lactose, origine du produit ou encore certains critères environnementaux.
+AlimCheck est une application Web de recherche et de comparaison de produits alimentaires.
+
+Elle permet aux utilisateurs de rechercher un aliment par son nom, sa marque ou sa catégorie, puis de consulter et comparer ses caractéristiques selon plusieurs critères : ingrédients, valeurs nutritionnelles, allergènes, présence d'additifs, certification bio, information ou certification halal lorsqu'elle est disponible, régime vegan/végétarien, sans gluten, sans lactose, origine du produit ou encore certains critères environnementaux.
+
 
 ## Choix du sujet
 
-Nous avons choisi ce sujet car l’alimentation occupe une place importante dans la vie quotidienne, et il est parfois difficile pour les consommateurs de trouver rapidement des informations fiables et compréhensibles sur les produits qu’ils achètent.
+Nous avons choisi ce sujet car l'alimentation occupe une place importante dans la vie quotidienne et il est parfois difficile pour les consommateurs de trouver rapidement des informations fiables et compréhensibles sur les produits qu'ils achètent.
 
-Aujourd’hui, lorsqu’une personne veut vérifier la composition d’un produit ou le comparer avec d’autres, elle doit souvent lire les étiquettes, consulter plusieurs sites ou utiliser différentes applications. Cela prend du temps et rend la comparaison moins simple.
+Aujourd'hui, lorsqu'une personne veut vérifier la composition d'un produit ou le comparer avec d'autres, elle doit souvent lire les étiquettes, consulter plusieurs sites ou utiliser différentes applications. Cela prend du temps et rend la comparaison moins simple.
 
-AlimCheck a pour objectif de regrouper ces informations dans une seule application afin d’aider l’utilisateur à mieux comprendre les produits alimentaires et à faire un choix plus adapté à ses besoins.
+AlimCheck a pour objectif de regrouper ces informations dans une seule application afin d'aider l'utilisateur à mieux comprendre les produits alimentaires et à faire un choix plus adapté à ses besoins.
+
 
 ## Utilité sociale
 
-L’utilité sociale d’AlimCheck repose sur plusieurs aspects.
+L'utilité sociale d'AlimCheck repose sur plusieurs aspects :
 
-- **Meilleure information des consommateurs** : l’application aide à mieux comprendre les produits alimentaires grâce à un accès plus simple aux ingrédients, aux nutriments et aux différentes caractéristiques.
-- **Aide à la santé et à l’alimentation** : elle permet d’identifier plus facilement certains produits selon des besoins particuliers, par exemple peu sucrés, riches en protéines, sans gluten ou sans lactose.
-- **Prise en compte des contraintes personnelles** : chaque utilisateur peut filtrer les produits selon ses propres critères, comme la présence d’allergènes, le bio, le vegan ou l’information halal.
-- **Aide à la comparaison** : l’application facilite la comparaison entre plusieurs produits sans devoir consulter plusieurs sources.
+- **Meilleure information des consommateurs** : l'application aide à mieux comprendre les produits alimentaires grâce à un accès plus simple aux ingrédients, aux nutriments et aux différentes caractéristiques.
+- **Aide à l'alimentation** : elle permet d'identifier plus facilement certains produits selon des besoins particuliers, par exemple peu sucrés, riches en protéines, sans gluten ou sans lactose.
+- **Prise en compte des contraintes personnelles** : chaque utilisateur peut filtrer les produits selon ses propres critères, comme la présence d'allergènes, le bio, le vegan ou l'information halal.
+- **Aide à la comparaison** : l'application facilite la comparaison entre plusieurs produits sans devoir consulter plusieurs sources.
 - **Consommation plus réfléchie** : en rendant les informations plus accessibles, AlimCheck encourage des choix plus informés.
+
 
 ## Effets de la numérisation
 
-Comme tout service numérique, AlimCheck présente des effets positifs mais aussi certaines limites qu’il faut prendre en compte.
+Comme tout service numérique, AlimCheck présente des effets positifs mais aussi certaines limites qu'il faut prendre en compte.
 
-### Centralisation de l’information
+### Centralisation de l'information
 
-L’application permet de regrouper dans un même espace plusieurs informations qui sont aujourd’hui dispersées entre les emballages, les sites des marques et d’autres plateformes.
+L'application permet de regrouper dans un même espace plusieurs informations qui sont aujourd'hui dispersées entre les emballages, les sites des marques et d'autres plateformes.
 
-Cela simplifie la recherche et permet à l’utilisateur d’accéder plus rapidement aux informations qui l’intéressent.
+Cela simplifie la recherche et permet à l'utilisateur d'accéder plus rapidement aux informations qui l'intéressent.
 
 ### Facilitation de la comparaison
 
@@ -40,41 +44,42 @@ Par exemple, un utilisateur peut comparer rapidement plusieurs aliments selon :
 - la quantité de sucre ;
 - la teneur en protéines ;
 - les allergènes ;
-- la présence d’additifs ;
+- la présence d'additifs ;
 - le caractère bio ;
-- l’information halal ;
-- ou encore certains critères environnementaux.
+- l'information ou la certification halal lorsqu'elle est disponible ;
+- certains critères environnementaux.
 
 ### Impact environnemental du service
 
 Même si AlimCheck peut apporter une utilité réelle, son fonctionnement a lui aussi un impact environnemental.
 
-L’application nécessite :
+L'application nécessite notamment :
 
 - un hébergement ;
 - une base de données ;
 - des échanges de données ;
-- l’utilisation d’un smartphone ou d’un ordinateur ;
-- l’affichage d’images et d’informations ;
+- l'utilisation d'un smartphone ou d'un ordinateur ;
+- l'affichage d'images et d'informations ;
 - éventuellement des traitements supplémentaires.
 
 Le service doit donc rester simple, léger et limité aux fonctionnalités réellement utiles.
+
 
 ## Substitution à des pratiques existantes
 
 AlimCheck peut se substituer à certaines pratiques actuelles.
 
-Aujourd’hui, un utilisateur peut :
+Aujourd'hui, un utilisateur peut :
 
-- lire l’étiquette directement sur le produit ;
-- consulter le site d’une marque ;
+- lire directement l'étiquette d'un produit ;
+- consulter le site d'une marque ;
 - utiliser un moteur de recherche ;
-- consulter d’autres applications de comparaison ou d’analyse alimentaire.
+- consulter d'autres applications de comparaison ou d'analyse alimentaire.
 
 AlimCheck pourrait rassembler une partie de ces démarches dans un seul outil.
 
-Cependant, cette substitution n’est pas forcément totale.  
-Si l’utilisateur continue à utiliser les autres sites ou applications en plus d’AlimCheck, alors le service ne remplace pas réellement les pratiques existantes : il s’y ajoute simplement.
+Cependant, cette substitution n'est pas forcément totale. Si l'utilisateur continue à utiliser les autres sites ou applications en plus d'AlimCheck, alors le service ne remplace pas réellement les pratiques existantes : il s'y ajoute simplement.
+
 
 ## Impact indirect et comportements des usagers
 
@@ -82,63 +87,63 @@ AlimCheck peut également avoir un impact indirect sur les pratiques de consomma
 
 ### Effets positifs
 
-- aider l’utilisateur à mieux choisir selon ses besoins ;
+- aider l'utilisateur à mieux choisir selon ses besoins ;
 - rendre les critères alimentaires plus visibles ;
 - encourager une consommation plus informée ;
 - faciliter la recherche de produits adaptés à certaines contraintes.
 
-### Risque d’effet rebond
+### Risque d'effet rebond
 
-Comme la recherche devient plus facile, l’utilisateur pourrait être amené à consulter plus de produits qu’avant, à multiplier les comparaisons ou à passer plus de temps sur l’application.
+Comme la recherche devient plus facile, l'utilisateur pourrait être amené à consulter plus de produits qu'avant, à multiplier les comparaisons ou à passer plus de temps sur l'application.
 
-Il existe aussi un risque si l’application met trop en avant de nouveaux produits ou de nombreuses alternatives : cela pourrait encourager une augmentation de la consommation au lieu de simplement aider au choix.
+Il existe également un risque si l'application met trop en avant de nouveaux produits ou de nombreuses alternatives : cela pourrait encourager une augmentation de la consommation au lieu de simplement aider au choix.
 
-L’application devra donc éviter d’ajouter des fonctionnalités inutiles ou trop gourmandes en ressources, et se concentrer sur l’essentiel.
+L'application devra donc éviter d'ajouter des fonctionnalités inutiles ou trop gourmandes en ressources et se concentrer sur l'essentiel.
+
 
 ## Démocratie technique
 
-AlimCheck ne doit pas décider à la place de l’utilisateur.
+AlimCheck ne doit pas décider à la place de l'utilisateur.
 
 Son rôle est de fournir des informations claires et de permettre à chacun de choisir les critères qui lui semblent importants.
 
 Par exemple, certains utilisateurs vont privilégier :
 
 - le bio ;
-- l’absence d’allergènes ;
-- l’information halal ;
+- l'absence d'allergènes ;
+- l'information halal ;
 - les valeurs nutritionnelles ;
-- l’origine du produit ;
-- ou encore un critère environnemental.
+- l'origine du produit ;
+- un critère environnemental.
 
-L’application doit donc laisser une liberté de choix importante, être compréhensible et signaler clairement lorsqu’une information n’est pas disponible.
+L'application doit donc laisser une liberté de choix importante, rester compréhensible et signaler clairement lorsqu'une information n'est pas disponible.
+
+
 ## Scénarios d'usage et impact
 
-Nous avons retenu deux scénarios représentant deux usages différents d'un service
-de recherche d'informations alimentaires.
+Nous avons retenu deux scénarios représentant deux usages différents d'un service de recherche d'informations alimentaires.
 
 ### Scénario 1 : Rechercher un produit précis
 
-**Cas étudié :** rechercher un produit connu, par exemple **Nutella**, afin de consulter
-sa composition et ses informations nutritionnelles.
+**Cas étudié :** rechercher un produit connu, par exemple **Nutella**, afin de consulter sa composition et ses informations nutritionnelles.
 
 1. Rechercher **Nutella** par son nom ou sa marque.
 2. Sélectionner le produit dans les résultats.
 3. Consulter les **ingrédients**, les **allergènes** et les **valeurs nutritionnelles**.
 4. Revenir à la liste des résultats.
 
+
 ### Scénario 2 : Comparer des produits selon leurs caractéristiques
 
-**Cas étudié :** rechercher une catégorie de produits, par exemple **céréales**,
-afin de comparer plusieurs produits selon leurs caractéristiques.
+**Cas étudié :** rechercher une catégorie de produits, par exemple **céréales**, afin de comparer plusieurs produits selon leurs caractéristiques.
 
 1. Rechercher la catégorie **céréales**.
 2. Consulter la liste des produits proposés.
-3. Sélectionner un premier produit et consulter ses **nutriments**, **ingrédients**
-   et **labels/certifications disponibles**.
+3. Sélectionner un premier produit et consulter ses **nutriments**, **ingrédients** et **labels/certifications disponibles**.
 4. Revenir à la liste.
 5. Sélectionner un deuxième produit.
-6. Comparer les informations disponibles : **sucre, protéines, ingrédients,
-   allergènes, bio ou autres labels**.
+6. Comparer les informations disponibles : **sucre, protéines, ingrédients, allergènes, bio ou autres labels**.
+
 
 ## Impact de l'exécution des scénarios auprès de différents services concurrents
 
@@ -148,38 +153,39 @@ L'EcoIndex d'une page est calculé en fonction de plusieurs indicateurs, notamme
 - le poids des téléchargements ;
 - le nombre d'éléments du document (DOM).
 
-Nous avons choisi de comparer l'impact de nos scénarios sur deux services proposant
-des fonctionnalités proches d'AlimCheck : **Open Food Facts** et **FatSecret**.
+Nous avons choisi de comparer l'impact de nos scénarios sur deux services proposant des fonctionnalités proches d'AlimCheck : **Open Food Facts** et **FatSecret**.
 
-| Service | Score (sur 100) | Classe | Détail des mesures |
+| Service | Score EcoIndex moyen (sur 100) | Classe | Détail des mesures |
 |---|---:|:---:|---|
 | Open Food Facts | 23,44 | F | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
 | FatSecret | 59,08 | C | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
 
-*Tab. 1 : Mesure de l'EcoIndex moyen des services de recherche d'informations alimentaires.*
+*Tab. 1 : EcoIndex moyen obtenu par Open Food Facts et FatSecret sur les deux scénarios étudiés.*
+
 Les mesures montrent une différence importante entre les deux services étudiés.
 
-**FatSecret** obtient un EcoIndex moyen de **59,08/100**, contre seulement
-**23,44/100** pour **Open Food Facts**.
+**FatSecret** obtient un EcoIndex moyen de **59,08/100**, contre seulement **23,44/100** pour **Open Food Facts**.
 
-Dans le détail, Open Food Facts présente en moyenne davantage de requêtes,
-un DOM beaucoup plus complexe et des pages plus lourdes que FatSecret.
+Dans le détail, Open Food Facts présente en moyenne davantage de requêtes, un DOM beaucoup plus complexe et des pages plus lourdes que FatSecret.
 
-Open Food Facts compte environ **2239 éléments dans le DOM en moyenne**,
-contre environ **445 éléments** pour FatSecret.
+Open Food Facts compte environ **2239 éléments dans le DOM en moyenne**, contre environ **445 éléments** pour FatSecret.
 
-Le nombre moyen de requêtes est également plus élevé pour Open Food Facts,
-avec environ **115 requêtes par page**, contre environ **76** pour FatSecret.
+Le nombre moyen de requêtes est également plus élevé pour Open Food Facts, avec environ **115 requêtes par page**, contre environ **76** pour FatSecret.
 
-Le poids moyen des pages est d'environ **1298 Ko** pour Open Food Facts,
-contre environ **1049 Ko** pour FatSecret.
+Le poids moyen des pages est d'environ **1298 Ko** pour Open Food Facts, contre environ **1049 Ko** pour FatSecret.
 
-Ces résultats montrent que la complexité du DOM, le nombre de requêtes et
-le poids des ressources ont une influence importante sur l'impact du service.
+Ces résultats montrent que la complexité du DOM, le nombre de requêtes et le poids des ressources ont une influence importante sur l'impact du service.
 
-Pour la conception d'AlimCheck, nous chercherons donc à limiter le nombre
-d'éléments affichés, les requêtes réseau et le poids des ressources afin
-de proposer un service plus sobre.
+Pour la conception d'AlimCheck, nous chercherons donc à :
+
+- limiter le nombre d'éléments présents dans les pages ;
+- limiter les requêtes réseau inutiles ;
+- réduire le poids des ressources téléchargées ;
+- limiter le nombre d'images et optimiser leur taille ;
+- privilégier des parcours courts.
+
+L'objectif est de proposer un service plus sobre que les services existants étudiés.
+
 
 ## Modèle économique
 
@@ -196,6 +202,8 @@ AlimCheck cherche à se différencier en regroupant dans une même application p
 Il existe également plusieurs produits de substitution : l'utilisateur peut consulter directement l'étiquette d'un produit, utiliser un moteur de recherche ou consulter une autre application alimentaire.
 
 Nous pouvons donc considérer qu'AlimCheck évolue dans un marché de **concurrence monopolistique** : plusieurs offreurs proposent des services proches mais différenciés.
+
+
 ### Modèle retenu pour AlimCheck
 
 Nous avons choisi un modèle économique **freemium**, complété éventuellement par des financements publics.
@@ -216,6 +224,7 @@ Le financement principal pourrait donc reposer sur les abonnements Premium.
 
 Des subventions publiques pourraient également compléter ce financement, notamment dans le cadre de projets liés à l'information des consommateurs, à la transition numérique ou à la consommation responsable.
 
+
 ### Choix liés à l'impact environnemental
 
 Nous ne souhaitons pas baser principalement AlimCheck sur la publicité.
@@ -231,14 +240,14 @@ Notre modèle repose donc principalement sur :
 - éventuellement des subventions publiques.
 
 Ce modèle permettrait de financer le développement, l'hébergement, la maintenance et les ressources humaines nécessaires au fonctionnement d'AlimCheck tout en limitant les fonctionnalités susceptibles d'augmenter inutilement son impact environnemental.
+
+
 ## Maquette de l'interface et échantillon de données
 
-Au vu des services comparés, des scénarios retenus et des objectifs de sobriété
-définis précédemment, nous allons maintenant définir les principales ressources
-Web manipulées par AlimCheck.
+Au vu des services comparés, des scénarios retenus et des objectifs de sobriété définis précédemment, nous allons définir les principales ressources Web manipulées par AlimCheck.
 
-L'application ne sera pas pensée uniquement comme un ensemble de pages, mais comme
-un ensemble de ressources identifiées par des URI et reliées entre elles.
+L'application n'est pas pensée uniquement comme un ensemble de pages, mais comme un ensemble de **ressources identifiées par des URI**, pouvant disposer de différentes représentations et être reliées entre elles.
+
 
 ### Types de ressources
 
@@ -246,7 +255,7 @@ Les principales ressources de notre application sont :
 
 | Ressource | Patron d'URI | Exemple |
 |---|---|---|
-| Liste / recherche de produits | `/products` | `/products?q=nutella` |
+| Collection de produits | `/products` | `/products` |
 | Produit alimentaire | `/products/{id}` | `/products/3017620425035` |
 | Marque | `/brands/{name}` | `/brands/ferrero` |
 | Catégorie | `/categories/{name}` | `/categories/cereales` |
@@ -255,15 +264,15 @@ Les principales ressources de notre application sont :
 
 La ressource principale est le **produit alimentaire**.
 
-Nous utiliserons de préférence un identifiant stable, par exemple le code-barres
-du produit, pour construire son URI.
+Nous utiliserons de préférence un identifiant stable, par exemple le code-barres du produit, pour construire son URI.
 
 Exemple :
 
 `/products/3017620425035`
 
-Cette ressource correspond au produit lui-même, indépendamment de la manière
-dont il est affiché à l'utilisateur.
+Cette URI identifie le produit lui-même, indépendamment de la manière dont celui-ci est représenté à l'utilisateur.
+
+
 ### Recherche et filtrage
 
 La recherche correspond à une représentation filtrée de la collection de produits.
@@ -272,7 +281,7 @@ Par exemple :
 
 `/products?q=nutella`
 
-permet de rechercher les produits correspondant au terme "Nutella".
+permet de rechercher les produits correspondant au terme **Nutella**.
 
 D'autres critères peuvent être ajoutés sous forme de paramètres :
 
@@ -282,8 +291,9 @@ ou :
 
 `/products?q=chocolat&sans_gluten=true`
 
-Ces paramètres permettent de conserver une URI compréhensible et directement
-liée aux critères choisis par l'utilisateur.
+Ces paramètres permettent de conserver des URI compréhensibles et directement liées aux critères sélectionnés par l'utilisateur.
+
+
 ### Représentations des ressources
 
 Une même ressource pourra avoir plusieurs représentations.
@@ -291,30 +301,33 @@ Une même ressource pourra avoir plusieurs représentations.
 Par exemple, un produit pourra être représenté :
 
 - en `text/html` pour l'affichage dans le navigateur ;
-- en `application/json` pour permettre l'accès aux données depuis une API.
+- en `application/json` pour l'accès structuré aux données.
 
-Exemple :
+La ressource :
 
 `/products/3017620425035`
 
-peut représenter le même produit sous forme d'une page HTML ou de données JSON.
+peut ainsi représenter le même produit sous forme d'une page HTML ou de données JSON.
 
 La représentation HTML pourra afficher notamment :
 
 - le nom du produit ;
 - la marque ;
-- l'image du produit ;
+- éventuellement une image du produit ;
 - les ingrédients ;
 - les allergènes ;
 - les valeurs nutritionnelles ;
 - les labels disponibles ;
-- les informations concernant le bio ou les certifications renseignées.
+- les informations concernant le bio ou les certifications disponibles.
 
-La représentation JSON contiendra les mêmes informations sous une forme structurée.
+Lorsqu'une information n'est pas connue ou vérifiée, l'application indiquera qu'elle est **non disponible**, plutôt que d'en déduire automatiquement une valeur.
+
+La représentation JSON contiendra ces informations sous une forme structurée.
+
 
 ### Liens entre les ressources
 
-Les représentations contiendront des liens vers les autres ressources associées.
+Les représentations contiendront également des liens vers les autres ressources associées.
 
 Par exemple, depuis la fiche d'un produit, l'utilisateur pourra accéder :
 
@@ -326,46 +339,23 @@ Par exemple, depuis la fiche d'un produit, l'utilisateur pourra accéder :
 
 Exemple :
 
-Produit : `/products/3017620425035`
+`/products/3017620425035`
 
 peut contenir des liens vers :
 
 - `/brands/ferrero`
 - `/categories/pates-a-tartiner`
 - `/ingredients/noisettes`
-- `/labels/bio`
 
-Ainsi, l'utilisateur peut naviguer d'une ressource à une autre sans devoir
-effectuer systématiquement une nouvelle recherche.
+Ainsi, l'utilisateur peut naviguer d'une ressource à une autre sans devoir effectuer systématiquement une nouvelle recherche.
 
-### Écrans principaux de la maquette
 
-La maquette comportera principalement trois types d'écrans :
+### Découpage de l'interface en composants
 
-1. **Recherche de produits**
-   - barre de recherche ;
-   - recherche par nom, marque ou catégorie ;
-   - filtres principaux.
-
-2. **Liste des résultats**
-   - nom du produit ;
-   - marque ;
-   - quelques informations essentielles ;
-   - accès à la fiche détaillée.
-
-3. **Fiche produit**
-   - ingrédients ;
-   - allergènes ;
-   - valeurs nutritionnelles ;
-   - labels et certifications disponibles ;
-   - liens vers la marque et la catégorie.
-  
-     ### Découpage de l'interface en composants
-
-À partir de la maquette, nous avons identifié les principaux composants métiers
-réutilisables de l'application.
+À partir de la maquette, nous avons identifié les principaux composants métiers réutilisables de l'application.
 
 Nous retenons deux types de pages principales.
+
 
 #### ProductListPage
 
@@ -377,6 +367,7 @@ Elle est composée de :
 - `SearchBar` : recherche par nom, marque ou catégorie ;
 - `FilterPanel` : sélection des différents critères de filtrage ;
 - `ProductList` : affichage de la liste des produits correspondant à la recherche.
+
 
 #### ProductPage
 
@@ -391,16 +382,27 @@ Elle est composée de :
 
 ![Maquette des composants de l'interface](https://github.com/user-attachments/assets/9410f3d2-3f91-4c68-9850-ba9f7c4800e3)
 
-*Fig. 1 : Découpage de l'interface AlimCheck en composants React :
-(a) page de recherche et liste des produits ; (b) page de consultation d'un produit.*
+*Fig. 1 : Découpage de l'interface AlimCheck en composants React : (a) page de recherche et liste des produits ; (b) page de consultation d'un produit.*
+
+
 ### Échantillon de données
 
-Afin de construire le prototype d'AlimCheck sans dépendre immédiatement d'une base
-de données externe, nous avons généré un échantillon de données avec `dummy-json`.
+Afin de construire le prototype d'AlimCheck sans dépendre immédiatement d'une base de données externe, nous avons généré un échantillon de données avec `dummy-json`.
 
 Le modèle contient les principales informations manipulées par l'application :
-produits, marques, catégories, ingrédients, allergènes, valeurs nutritionnelles,
-labels et préférences alimentaires.
+
+- produits ;
+- marques ;
+- catégories ;
+- ingrédients ;
+- allergènes ;
+- valeurs nutritionnelles ;
+- labels ;
+- critères alimentaires.
+
+L'échantillon contient plusieurs produits fictifs possédant une structure proche des données qui seront nécessaires au prototype.
+
+Les données générées sont utilisées uniquement pour le développement et le test de l'interface. Elles ne doivent donc pas être considérées comme des informations réelles sur des produits existants.
 
 - [Modèle de génération](./sample_data.hbs)
 - [Échantillon de données généré](./sample_data.json)
