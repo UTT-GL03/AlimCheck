@@ -406,3 +406,52 @@ Les données générées sont utilisées uniquement pour le développement et le
 
 - [Modèle de génération](./sample_data.hbs)
 - [Échantillon de données généré](./sample_data.json)
+## Implémentation du scénario prioritaire
+
+### Étape de prototypage : données chargées de manière statique
+
+Pour cette première version du prototype (v1.0.0), les données sont chargées
+localement à partir de `sample_data.json`.
+
+Les fonctionnalités implémentées sont volontairement limitées à celles
+nécessaires au scénario prioritaire :
+
+- consulter la liste des produits ;
+- sélectionner un produit ;
+- consulter sa fiche détaillée ;
+- revenir à la liste des produits.
+
+### Page de liste des produits
+
+La page `/products` affiche l'échantillon de produits sous une forme simple,
+proche de la maquette définie précédemment.
+
+![Prototype de la liste des produits](LIEN_CAPTURE)
+
+*Fig. 2 : Prototype de la page de liste des produits.*
+
+Dans un objectif de sobriété, nous utilisons PicoCSS et avons choisi de ne pas
+inclure d'images de produits dans cette première version. Nous évitons également
+les publicités, les traceurs et les ressources tierces non nécessaires.
+
+À ce stade, les données étant encore chargées statiquement, l'évaluation ne
+représente pas encore l'ensemble de l'impact d'une future application connectée
+à un backend. Elle permet néanmoins d'évaluer l'affichage des données et les
+ressources nécessaires au frontend.
+
+| Mode | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
+|---|---:|---:|---:|---:|---:|
+| Développement | 71,79 B | 1,56 | 203 | 20 | 5573 |
+| Pré-production | 87,82 A | 1,24 | 199 | 4 | 100 |
+
+*Tab. 2 : Évaluation de l'impact du prototype de la page de liste des produits.*
+
+Le passage en pré-production améliore nettement les résultats. L'EcoIndex passe
+de 71,79 (B) à 87,82 (A), tandis que le nombre de requêtes passe de 20 à 4.
+
+La taille de la page diminue également fortement, de 5573 Ko à 100 Ko.
+La taille du DOM reste presque identique, avec 203 éléments en développement
+et 199 en pré-production.
+
+Cette différence s'explique principalement par l'optimisation des ressources
+effectuée lors de la construction de la version de production.
