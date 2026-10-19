@@ -432,7 +432,7 @@ Deux types de pages sont ainsi implémentés :
 La page `/products` affiche l'échantillon de produits sous une forme simple,
 proche de la maquette définie précédemment.
 
-<img width="893" height="916" alt="Prototype de la liste des produits AlimCheck" src="https://github.com/user-attachments/assets/2ff9e972-0b86-4ab3-86e5-1fb2970f441e" />
+<img width="1270" height="919" alt="Prototype de la fiche détaillée d'un produit AlimCheck" src="https://github.com/user-attachments/assets/aedd078a-4a87-488a-aafd-8a528d0502ba" />
 
 *Fig. 2 : Prototype de la page de liste des produits.*
 
@@ -491,7 +491,7 @@ Elle affiche notamment :
 - les valeurs nutritionnelles ;
 - certaines caractéristiques alimentaires.
 
-<img width="1270" height="919" alt="Prototype de la fiche détaillée d'un produit AlimCheck" src="https://github.com/user-attachments/assets/aedd078a-4a87-488a-aafd-8a528d0502ba" />
+<img width="893" height="916" alt="Prototype de la liste des produits AlimCheck" src="https://github.com/user-attachments/assets/2ff9e972-0b86-4ab3-86e5-1fb2970f441e" />
 
 *Fig. 3 : Prototype de la page détaillée d'un produit.*
 
