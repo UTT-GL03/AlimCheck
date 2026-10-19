@@ -1,4 +1,3 @@
-<img width="1270" height="919" alt="818be47a-0f91-486d-a66a-9121a2ede6e8" src="https://github.com/user-attachments/assets/5999ca12-e546-4666-9075-53090518c8bd" />
 # AlimCheck
 
 AlimCheck est une application Web de recherche et de comparaison de produits alimentaires.
@@ -407,7 +406,7 @@ Les données générées sont utilisées uniquement pour le développement et le
 
 - [Modèle de génération](./sample_data.hbs)
 - [Échantillon de données généré](./sample_data.json)
-## Implémentation du scénario prioritaire
+  ## Implémentation du scénario prioritaire
 
 ### Étape de prototypage : données chargées de manière statique
 
