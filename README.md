@@ -1,3 +1,4 @@
+<img width="1270" height="919" alt="818be47a-0f91-486d-a66a-9121a2ede6e8" src="https://github.com/user-attachments/assets/5999ca12-e546-4666-9075-53090518c8bd" />
 # AlimCheck
 
 AlimCheck est une application Web de recherche et de comparaison de produits alimentaires.
@@ -421,23 +422,40 @@ nécessaires au scénario prioritaire :
 - consulter sa fiche détaillée ;
 - revenir à la liste des produits.
 
+Deux types de pages sont ainsi implémentés :
+
+- `/products` : page de liste des produits ;
+- `/products/{id}` : page détaillée d'un produit.
+
+
 ### Page de liste des produits
 
 La page `/products` affiche l'échantillon de produits sous une forme simple,
 proche de la maquette définie précédemment.
 
-![Prototype de la liste des produits](LIEN_CAPTURE)
+<img width="893" height="916" alt="Prototype de la liste des produits AlimCheck" src="https://github.com/user-attachments/assets/2ff9e972-0b86-4ab3-86e5-1fb2970f441e" />
 
 *Fig. 2 : Prototype de la page de liste des produits.*
 
 Dans un objectif de sobriété, nous utilisons PicoCSS et avons choisi de ne pas
-inclure d'images de produits dans cette première version. Nous évitons également
-les publicités, les traceurs et les ressources tierces non nécessaires.
+inclure d'images de produits dans cette première version.
+
+Nous évitons également les publicités, les traceurs et les ressources tierces
+non nécessaires.
 
 À ce stade, les données étant encore chargées statiquement, l'évaluation ne
 représente pas encore l'ensemble de l'impact d'une future application connectée
-à un backend. Elle permet néanmoins d'évaluer l'affichage des données et les
+à un backend.
+
+Elle permet néanmoins d'évaluer l'impact de l'affichage des données et des
 ressources nécessaires au frontend.
+
+
+### Impact estimé de la page de liste
+
+Nous avons mesuré la page de liste des produits dans deux configurations :
+le mode de développement de Vite et le mode pré-production après génération
+du build.
 
 | Mode | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
 |---|---:|---:|---:|---:|---:|
@@ -446,12 +464,38 @@ ressources nécessaires au frontend.
 
 *Tab. 2 : Évaluation de l'impact du prototype de la page de liste des produits.*
 
-Le passage en pré-production améliore nettement les résultats. L'EcoIndex passe
-de 71,79 (B) à 87,82 (A), tandis que le nombre de requêtes passe de 20 à 4.
+Le passage en pré-production améliore nettement les résultats.
 
-La taille de la page diminue également fortement, de 5573 Ko à 100 Ko.
-La taille du DOM reste presque identique, avec 203 éléments en développement
-et 199 en pré-production.
+L'EcoIndex passe de **71,79 (B)** à **87,82 (A)**, tandis que le nombre
+de requêtes passe de **20 à 4**.
+
+La taille de la page diminue également fortement, de **5573 Ko à 100 Ko**.
+
+La taille du DOM reste presque identique, avec **203 éléments** en développement
+contre **199 éléments** en pré-production.
 
 Cette différence s'explique principalement par l'optimisation des ressources
 effectuée lors de la construction de la version de production.
+
+
+### Page détaillée d'un produit
+
+La page `/products/{id}` permet de consulter les informations détaillées
+d'un produit sélectionné depuis la liste.
+
+Elle affiche notamment :
+
+- le nom du produit ;
+- la marque et la catégorie ;
+- les ingrédients ;
+- les allergènes ;
+- les valeurs nutritionnelles ;
+- certaines caractéristiques alimentaires.
+
+<img width="1270" height="919" alt="Prototype de la fiche détaillée d'un produit AlimCheck" src="https://github.com/user-attachments/assets/aedd078a-4a87-488a-aafd-8a528d0502ba" />
+
+*Fig. 3 : Prototype de la page détaillée d'un produit.*
+
+Un lien permet de revenir directement à la liste des produits, ce qui permet
+d'exécuter le parcours principal de navigation prévu dans cette première
+version du prototype.
