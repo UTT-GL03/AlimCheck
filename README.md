@@ -498,3 +498,48 @@ Elle affiche notamment :
 Un lien permet de revenir directement à la liste des produits, ce qui permet
 d'exécuter le parcours principal de navigation prévu dans cette première
 version du prototype.
+### Évaluation de l'impact du scénario prioritaire
+
+Avec l'ajout de la page détaillée d'un produit et de la navigation entre les deux
+types de pages, il devient possible d'exécuter le scénario prioritaire complet
+et d'en mesurer l'impact.
+
+Le scénario mesuré est le suivant :
+
+1. consulter la liste des produits ;
+2. choisir et consulter un premier produit ;
+3. revenir à la liste des produits ;
+4. choisir et consulter un autre produit.
+
+| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
+|---|---:|---:|---:|---:|---:|
+| 1. Consulter la liste des produits | 87,82 A | 1,24 | 199 | 4 | 100 |
+| 2. Choisir et consulter un produit | 93,63 A | 1,13 | 53 | 4 | 100 |
+| 3. Revenir à la liste des produits | 87,82 A | 1,24 | 199 | 4 | 100 |
+| 4. Choisir et consulter un autre produit | 93,63 A | 1,13 | 53 | 4 | 100 |
+
+*Tab. 3 : Évaluation de l'impact du scénario prioritaire dans le prototype AlimCheck v1.0.0.*
+
+Les résultats obtenus sont globalement très bons puisque toutes les étapes du
+scénario sont classées **A** par EcoIndex.
+
+La page de liste des produits obtient un EcoIndex de **87,82**, avec
+**199 éléments dans le DOM**, tandis que les pages détaillées obtiennent un
+EcoIndex de **93,63**, avec seulement **53 éléments dans le DOM**.
+
+La différence entre les deux types de pages s'explique principalement par la
+complexité de l'interface. La liste doit afficher plusieurs produits
+simultanément, ce qui augmente le nombre d'éléments présents dans le DOM.
+À l'inverse, la fiche détaillée ne présente qu'un seul produit et possède donc
+une structure beaucoup plus légère.
+
+Le nombre de requêtes reste stable à **4** pour chaque étape et la taille
+mesurée de la page reste de **100 Ko**.
+
+Les émissions estimées sont également légèrement plus faibles sur les pages
+de détail, avec **1,13 gCO2e**, contre **1,24 gCO2e** pour la liste des produits.
+
+Ces résultats montrent que le prototype v1.0.0 reste relativement sobre pour
+l'ensemble du scénario prioritaire. Le choix d'une interface simple, sans
+images de produits, sans publicité et sans ressources tierces non nécessaires
+contribue à limiter son impact.
