@@ -1,0 +1,889 @@
+{
+  "products": [
+    {
+      "id": "9648279173412",
+      "name": "Chocolat noir 70%",
+
+      "brand": "Danone",
+
+      "category": "Boissons",
+
+      "ingredients": [
+        "cacao",
+        "soja",
+        "huile végétale"
+      ],
+
+      "allergen": "Soja",
+
+      "nutrition": {
+        "energy_kcal": 215,
+        "proteins_g": 21,
+        "carbohydrates_g": 57,
+        "sugars_g": 25,
+        "fat_g": 22,
+        "salt_g": 1.35
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "A"
+    },
+    {
+      "id": "8344783034608",
+      "name": "Flocons d avoine",
+
+      "brand": "Carrefour",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "noisettes",
+        "chocolat",
+        "cacao"
+      ],
+
+      "allergen": "Gluten",
+
+      "nutrition": {
+        "energy_kcal": 502,
+        "proteins_g": 24,
+        "carbohydrates_g": 65,
+        "sugars_g": 47,
+        "fat_g": 6,
+        "salt_g": 2.40
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": false,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "A"
+    },
+    {
+      "id": "4301460819686",
+      "name": "Biscuits au chocolat",
+
+      "brand": "Auchan",
+
+      "category": "Chocolat",
+
+      "ingredients": [
+        "lait",
+        "chocolat",
+        "cacao"
+      ],
+
+      "allergen": "Lait",
+
+      "nutrition": {
+        "energy_kcal": 571,
+        "proteins_g": 22,
+        "carbohydrates_g": 47,
+        "sugars_g": 58,
+        "fat_g": 45,
+        "salt_g": 0.03
+      },
+
+      "organic": true,
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "C"
+    },
+    {
+      "id": "3778339666807",
+      "name": "Lait demi-écrémé",
+
+      "brand": "Ferrero",
+
+      "category": "Boissons",
+
+      "ingredients": [
+        "lait",
+        "lait",
+        "cacao"
+      ],
+
+      "allergen": "Arachides",
+
+      "nutrition": {
+        "energy_kcal": 448,
+        "proteins_g": 11,
+        "carbohydrates_g": 28,
+        "sugars_g": 46,
+        "fat_g": 1,
+        "salt_g": 0.57
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "A"
+    },
+    {
+      "id": "1459688682527",
+      "name": "Biscuits au chocolat",
+
+      "brand": "Céréal Bio",
+
+      "category": "Chocolat",
+
+      "ingredients": [
+        "huile de tournesol",
+        "sucre",
+        "cacao"
+      ],
+
+      "allergen": "Soja",
+
+      "nutrition": {
+        "energy_kcal": 351,
+        "proteins_g": 2,
+        "carbohydrates_g": 30,
+        "sugars_g": 45,
+        "fat_g": 40,
+        "salt_g": 1.67
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": false,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "C"
+    },
+    {
+      "id": "7359452227445",
+      "name": "Chocolat noir 70%",
+
+      "brand": "Carrefour",
+
+      "category": "Chocolat",
+
+      "ingredients": [
+        "avoine",
+        "amandes",
+        "avoine"
+      ],
+
+      "allergen": "Fruits à coque",
+
+      "nutrition": {
+        "energy_kcal": 573,
+        "proteins_g": 10,
+        "carbohydrates_g": 19,
+        "sugars_g": 14,
+        "fat_g": 47,
+        "salt_g": 1.97
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "E"
+    },
+    {
+      "id": "3795868517561",
+      "name": "Biscuits au chocolat",
+
+      "brand": "Auchan",
+
+      "category": "Boissons",
+
+      "ingredients": [
+        "blé",
+        "amandes",
+        "huile végétale"
+      ],
+
+      "allergen": "Lait",
+
+      "nutrition": {
+        "energy_kcal": 141,
+        "proteins_g": 14,
+        "carbohydrates_g": 10,
+        "sugars_g": 53,
+        "fat_g": 47,
+        "salt_g": 2.68
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "E"
+    },
+    {
+      "id": "7263017594646",
+      "name": "Biscuits au chocolat",
+
+      "brand": "Danone",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "sucre",
+        "soja",
+        "huile végétale"
+      ],
+
+      "allergen": "Fruits à coque",
+
+      "nutrition": {
+        "energy_kcal": 409,
+        "proteins_g": 6,
+        "carbohydrates_g": 58,
+        "sugars_g": 56,
+        "fat_g": 29,
+        "salt_g": 0.68
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "B"
+    },
+    {
+      "id": "1869413209231",
+      "name": "Chocolat noir 70%",
+
+      "brand": "Nestlé",
+
+      "category": "Produits laitiers",
+
+      "ingredients": [
+        "lait",
+        "lait",
+        "vanille"
+      ],
+
+      "allergen": "Fruits à coque",
+
+      "nutrition": {
+        "energy_kcal": 528,
+        "proteins_g": 30,
+        "carbohydrates_g": 28,
+        "sugars_g": 6,
+        "fat_g": 34,
+        "salt_g": 1.85
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "B"
+    },
+    {
+      "id": "8400632183796",
+      "name": "Céréales chocolat",
+
+      "brand": "Carrefour",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "blé",
+        "beurre de cacao",
+        "sel"
+      ],
+
+      "allergen": "Aucun",
+
+      "nutrition": {
+        "energy_kcal": 319,
+        "proteins_g": 26,
+        "carbohydrates_g": 79,
+        "sugars_g": 29,
+        "fat_g": 25,
+        "salt_g": 2.34
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": false,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "E"
+    },
+    {
+      "id": "4452037631571",
+      "name": "Flocons d avoine",
+
+      "brand": "Céréal Bio",
+
+      "category": "Snacks",
+
+      "ingredients": [
+        "avoine",
+        "sucre",
+        "noisettes"
+      ],
+
+      "allergen": "Lait",
+
+      "nutrition": {
+        "energy_kcal": 634,
+        "proteins_g": 22,
+        "carbohydrates_g": 34,
+        "sugars_g": 31,
+        "fat_g": 22,
+        "salt_g": 1.25
+      },
+
+      "organic": false,
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "D"
+    },
+    {
+      "id": "5216601114493",
+      "name": "Flocons d avoine",
+
+      "brand": "Céréal Bio",
+
+      "category": "Céréales",
+
+      "ingredients": [
+        "cacao",
+        "lait",
+        "cacao"
+      ],
+
+      "allergen": "Fruits à coque",
+
+      "nutrition": {
+        "energy_kcal": 60,
+        "proteins_g": 19,
+        "carbohydrates_g": 6,
+        "sugars_g": 46,
+        "fat_g": 23,
+        "salt_g": 0.39
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "D"
+    },
+    {
+      "id": "5118209738549",
+      "name": "Lait demi-écrémé",
+
+      "brand": "Nestlé",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "noisettes",
+        "sucre",
+        "avoine"
+      ],
+
+      "allergen": "Arachides",
+
+      "nutrition": {
+        "energy_kcal": 93,
+        "proteins_g": 12,
+        "carbohydrates_g": 89,
+        "sugars_g": 51,
+        "fat_g": 28,
+        "salt_g": 0.98
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "D"
+    },
+    {
+      "id": "5427694481693",
+      "name": "Yaourt nature",
+
+      "brand": "Kelloggs",
+
+      "category": "Produits laitiers",
+
+      "ingredients": [
+        "blé",
+        "amandes",
+        "sel"
+      ],
+
+      "allergen": "Arachides",
+
+      "nutrition": {
+        "energy_kcal": 495,
+        "proteins_g": 19,
+        "carbohydrates_g": 15,
+        "sugars_g": 31,
+        "fat_g": 3,
+        "salt_g": 0.93
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": true,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "C"
+    },
+    {
+      "id": "6688470614323",
+      "name": "Yaourt nature",
+
+      "brand": "Carrefour",
+
+      "category": "Snacks",
+
+      "ingredients": [
+        "noisettes",
+        "sucre",
+        "huile végétale"
+      ],
+
+      "allergen": "Fruits à coque",
+
+      "nutrition": {
+        "energy_kcal": 644,
+        "proteins_g": 7,
+        "carbohydrates_g": 89,
+        "sugars_g": 31,
+        "fat_g": 29,
+        "salt_g": 2.65
+      },
+
+      "organic": true,
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "B"
+    },
+    {
+      "id": "7138713551575",
+      "name": "Jus d orange",
+
+      "brand": "Carrefour",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "lait",
+        "soja",
+        "noisettes"
+      ],
+
+      "allergen": "Gluten",
+
+      "nutrition": {
+        "energy_kcal": 625,
+        "proteins_g": 5,
+        "carbohydrates_g": 71,
+        "sugars_g": 32,
+        "fat_g": 13,
+        "salt_g": 0.48
+      },
+
+      "organic": false,
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "B"
+    },
+    {
+      "id": "3260373367038",
+      "name": "Céréales chocolat",
+
+      "brand": "Danone",
+
+      "category": "Snacks",
+
+      "ingredients": [
+        "lait",
+        "soja",
+        "vanille"
+      ],
+
+      "allergen": "Soja",
+
+      "nutrition": {
+        "energy_kcal": 119,
+        "proteins_g": 26,
+        "carbohydrates_g": 86,
+        "sugars_g": 27,
+        "fat_g": 44,
+        "salt_g": 2.57
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "C"
+    },
+    {
+      "id": "9378296514214",
+      "name": "Compote de pommes",
+
+      "brand": "Danone",
+
+      "category": "Chocolat",
+
+      "ingredients": [
+        "lait",
+        "beurre de cacao",
+        "cacao"
+      ],
+
+      "allergen": "Gluten",
+
+      "nutrition": {
+        "energy_kcal": 519,
+        "proteins_g": 28,
+        "carbohydrates_g": 78,
+        "sugars_g": 53,
+        "fat_g": 31,
+        "salt_g": 1.01
+      },
+
+      "organic": true,
+      "vegan": false,
+      "vegetarian": false,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "C"
+    },
+    {
+      "id": "5076092163797",
+      "name": "Chocolat noir 70%",
+
+      "brand": "Céréal Bio",
+
+      "category": "Pâtes à tartiner",
+
+      "ingredients": [
+        "riz",
+        "sucre",
+        "avoine"
+      ],
+
+      "allergen": "Fruits à coque",
+
+      "nutrition": {
+        "energy_kcal": 541,
+        "proteins_g": 12,
+        "carbohydrates_g": 19,
+        "sugars_g": 35,
+        "fat_g": 48,
+        "salt_g": 1.34
+      },
+
+      "organic": false,
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": true,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "D"
+    },
+    {
+      "id": "3712364458388",
+      "name": "Pâte à tartiner",
+
+      "brand": "Kelloggs",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "noisettes",
+        "beurre de cacao",
+        "sel"
+      ],
+
+      "allergen": "Arachides",
+
+      "nutrition": {
+        "energy_kcal": 475,
+        "proteins_g": 23,
+        "carbohydrates_g": 53,
+        "sugars_g": 46,
+        "fat_g": 4,
+        "salt_g": 0.71
+      },
+
+      "organic": false,
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "B"
+    },
+    {
+      "id": "2602636205123",
+      "name": "Barre de céréales",
+
+      "brand": "Carrefour",
+
+      "category": "Chocolat",
+
+      "ingredients": [
+        "noisettes",
+        "chocolat",
+        "cacao"
+      ],
+
+      "allergen": "Aucun",
+
+      "nutrition": {
+        "energy_kcal": 97,
+        "proteins_g": 0,
+        "carbohydrates_g": 40,
+        "sugars_g": 54,
+        "fat_g": 21,
+        "salt_g": 0.44
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "A"
+    },
+    {
+      "id": "2269589473987",
+      "name": "Lait demi-écrémé",
+
+      "brand": "Ferrero",
+
+      "category": "Produits laitiers",
+
+      "ingredients": [
+        "huile de tournesol",
+        "amandes",
+        "cacao"
+      ],
+
+      "allergen": "Soja",
+
+      "nutrition": {
+        "energy_kcal": 627,
+        "proteins_g": 21,
+        "carbohydrates_g": 74,
+        "sugars_g": 33,
+        "fat_g": 21,
+        "salt_g": 1.25
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "A"
+    },
+    {
+      "id": "7042016063269",
+      "name": "Lait demi-écrémé",
+
+      "brand": "Carrefour",
+
+      "category": "Pâtes à tartiner",
+
+      "ingredients": [
+        "sucre",
+        "beurre de cacao",
+        "avoine"
+      ],
+
+      "allergen": "Lait",
+
+      "nutrition": {
+        "energy_kcal": 388,
+        "proteins_g": 10,
+        "carbohydrates_g": 84,
+        "sugars_g": 47,
+        "fat_g": 23,
+        "salt_g": 2.54
+      },
+
+      "organic": false,
+      "vegan": false,
+      "vegetarian": false,
+      "glutenFree": true,
+
+      "halalCertification": "Information non disponible",
+
+      "nutriScore": "E"
+    },
+    {
+      "id": "3646759424647",
+      "name": "Compote de pommes",
+
+      "brand": "Ferrero",
+
+      "category": "Chocolat",
+
+      "ingredients": [
+        "avoine",
+        "beurre de cacao",
+        "huile végétale"
+      ],
+
+      "allergen": "Lait",
+
+      "nutrition": {
+        "energy_kcal": 379,
+        "proteins_g": 13,
+        "carbohydrates_g": 11,
+        "sugars_g": 27,
+        "fat_g": 26,
+        "salt_g": 1.80
+      },
+
+      "organic": true,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "C"
+    },
+    {
+      "id": "5463661243033",
+      "name": "Compote de pommes",
+
+      "brand": "Bjorg",
+
+      "category": "Boissons",
+
+      "ingredients": [
+        "riz",
+        "maïs",
+        "cacao"
+      ],
+
+      "allergen": "Soja",
+
+      "nutrition": {
+        "energy_kcal": 180,
+        "proteins_g": 17,
+        "carbohydrates_g": 67,
+        "sugars_g": 15,
+        "fat_g": 7,
+        "salt_g": 0.76
+      },
+
+      "organic": false,
+      "vegan": false,
+      "vegetarian": false,
+      "glutenFree": true,
+
+      "halalCertification": "Certifié",
+
+      "nutriScore": "D"
+    },
+    {
+      "id": "9435570852369",
+      "name": "Barre de céréales",
+
+      "brand": "Kelloggs",
+
+      "category": "Biscuits",
+
+      "ingredients": [
+        "sucre",
+        "beurre de cacao",
+        "vanille"
+      ],
+
+      "allergen": "Soja",
+
+      "nutrition": {
+        "energy_kcal": 589,
+        "proteins_g": 4,
+        "carbohydrates_g": 6,
+        "sugars_g": 29,
+        "fat_g": 46,
+        "salt_g": 0.08
+      },
+
+      "organic": false,
+      "vegan": true,
+      "vegetarian": false,
+      "glutenFree": false,
+
+      "halalCertification": "Non certifié",
+
+      "nutriScore": "C"
+    }
+  ]
+}
+
