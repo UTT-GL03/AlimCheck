@@ -1,13 +1,23 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import data from './assets/sample_data.json'
 
 function ProductList() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch('/sample_data.json')
+      .then(response => response.json())
+      .then(data => {
+        setProducts(data.products)
+      })
+  }, [])
+
   return (
     <main className="container">
       <h2>Produits alimentaires</h2>
 
       <div className="product-grid">
-        {data.products.map((product) => (
+        {products.map((product) => (
           <article key={product.id}>
             <header>
               <strong>{product.category}</strong>

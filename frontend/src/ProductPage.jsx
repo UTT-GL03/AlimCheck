@@ -1,18 +1,27 @@
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
-import data from './assets/sample_data.json'
 
 function ProductPage() {
   const { id } = useParams()
 
-  const product = data.products.find(
-    (product) => String(product.id) === id
-  )
+  const [product, setProduct] = useState(null)
+
+  useEffect(() => {
+    fetch('/sample_data.json')
+      .then(response => response.json())
+      .then(data => {
+        const selectedProduct = data.products.find(
+          product => String(product.id) === id
+        )
+
+        setProduct(selectedProduct)
+      })
+  }, [id])
 
   if (!product) {
     return (
       <main className="container">
-        <h2>Produit introuvable</h2>
-        <Link to="/products">Retour aux produits</Link>
+        <p>Chargement du produit...</p>
       </main>
     )
   }
@@ -26,6 +35,7 @@ function ProductPage() {
       <article>
         <header>
           <h2>{product.name}</h2>
+
           <p>
             {product.brand} — {product.category}
           </p>
@@ -45,22 +55,27 @@ function ProductPage() {
               <th>Énergie</th>
               <td>{product.nutrition.energy_kcal} kcal</td>
             </tr>
+
             <tr>
               <th>Protéines</th>
               <td>{product.nutrition.proteins_g} g</td>
             </tr>
+
             <tr>
               <th>Glucides</th>
               <td>{product.nutrition.carbohydrates_g} g</td>
             </tr>
+
             <tr>
               <th>Sucres</th>
               <td>{product.nutrition.sugars_g} g</td>
             </tr>
+
             <tr>
               <th>Matières grasses</th>
               <td>{product.nutrition.fat_g} g</td>
             </tr>
+
             <tr>
               <th>Sel</th>
               <td>{product.nutrition.salt_g} g</td>
