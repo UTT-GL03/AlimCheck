@@ -543,3 +543,43 @@ Ces résultats montrent que le prototype v1.0.0 reste relativement sobre pour
 l'ensemble du scénario prioritaire. Le choix d'une interface simple, sans
 images de produits, sans publicité et sans ressources tierces non nécessaires
 contribue à limiter son impact.
+
+### Étape de prototypage : données statiques chargées de manière dynamique
+
+Pour la version **v1.0.1**, les fonctionnalités proposées restent identiques à celles de la version précédente. La différence concerne la manière dont les données sont récupérées.
+
+Dans la version v1.0.0, le fichier `sample_data.json` était directement importé dans le code JavaScript de l'application.
+
+Dans cette nouvelle version, le fichier est placé dans le répertoire `public` et est récupéré dynamiquement par le frontend à l'aide de `fetch()`.
+
+Les hooks React `useState()` et `useEffect()` sont utilisés afin de stocker les données récupérées et de déclencher leur chargement lors de l'affichage des pages.
+
+Le scénario prioritaire reste inchangé afin de pouvoir comparer les résultats avec ceux de la version précédente :
+
+1. consulter la liste des produits ;
+2. choisir et consulter un premier produit ;
+3. revenir à la liste des produits ;
+4. choisir et consulter un second produit.
+
+### Impact estimé du scénario prioritaire — v1.0.1
+
+| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
+|---|---:|---:|---:|---:|---:|
+| 1. Consulter la liste des produits | 87,67 A | 1,25 | 199 | 5 | 103 |
+| 2. Consulter Chocolat noir 70 % | 93,35 A | 1,13 | 53 | 6 | 105 |
+| 3. Revenir à la liste des produits | 87,39 A | 1,25 | 199 | 7 | 107 |
+| 4. Consulter Flocons d'avoine | 93,07 A | 1,14 | 53 | 8 | 109 |
+
+*Tab. 3 : Évaluation de l'impact du scénario prioritaire avec le chargement dynamique des données.*
+
+Les résultats restent globalement proches de ceux obtenus avec la version v1.0.0 et toutes les étapes conservent une classe **A** avec EcoIndex.
+
+La principale différence observée concerne le nombre de requêtes. La première page nécessite désormais **5 requêtes contre 4 dans la version précédente**. Cette requête supplémentaire correspond au chargement de `sample_data.json` par le frontend avec `fetch()`.
+
+Au cours du scénario, le nombre de requêtes passe ensuite successivement de **5 à 6, puis 7 et 8**, car les données sont de nouveau récupérées lors de l'affichage des différentes pages.
+
+La taille du DOM reste pratiquement identique à celle de la version précédente : **199 éléments** pour la liste des produits et **53 éléments** pour une fiche produit. Le changement du mode de chargement des données n'a donc pas modifié la structure de l'interface.
+
+L'impact environnemental reste également faible, avec un EcoIndex compris entre **87,39 et 93,35** et des émissions estimées comprises entre **1,13 et 1,25 gCO2e**.
+
+Cette version montre ainsi que le chargement dynamique apporte un fonctionnement plus proche d'une application connectée à une API, au prix d'un nombre légèrement supérieur de requêtes réseau.
