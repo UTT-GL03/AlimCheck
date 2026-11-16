@@ -583,6 +583,9 @@ La taille du DOM reste pratiquement identique à celle de la version précédent
 L'impact environnemental reste également faible, avec un EcoIndex compris entre **87,39 et 93,35** et des émissions estimées comprises entre **1,13 et 1,25 gCO2e**.
 
 Cette version montre ainsi que le chargement dynamique apporte un fonctionnement plus proche d'une application connectée à une API, au prix d'un nombre légèrement supérieur de requêtes réseau.
+Dans le cas d'AlimCheck, l'évolution du service entraînera principalement une augmentation du nombre de produits référencés dans le catalogue. De nouvelles marques et références pourront être ajoutées progressivement afin d'améliorer la couverture du service.
+
+Pour simuler cette évolution et rendre ses effets mesurables, nous avons choisi de multiplier approximativement par 100 la taille de notre échantillon, en passant de quelques dizaines de produits à environ **3000 produits**.
 ### Évolution de l'EcoIndex lors du passage à l'échelle
 
 Afin d'évaluer l'effet d'une augmentation du volume de données, nous avons comparé le même scénario avec un échantillon initial de quelques dizaines de produits puis avec environ **3000 produits**.
@@ -595,7 +598,7 @@ Les mesures ont été réalisées avec GreenIT Analysis CLI en conservant exacte
 | 2. Choisir un premier produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
 | 3. Revenir à la liste des produits | 86 A → 36 D | 1,28 → 2,28 | 164 → 21 017 | 1 → 1 | 13,92 → 1940,817 |
 | 4. Choisir un deuxième produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
-
+*Tab. 5 : Effet du passage à l'échelle sur l'impact du scénario prioritaire d'AlimCheck.*
 Le passage à l'échelle entraîne une forte dégradation de l'EcoIndex des pages présentant la liste des produits. Au premier chargement, l'EcoIndex passe de **83 A à 34 E**, tandis que lors du retour à la liste il passe de **86 A à 36 D**.
 
 Cette évolution s'explique principalement par l'augmentation très importante de la taille du DOM. La liste contient seulement **164 éléments DOM** avec le petit échantillon, contre **21 017 éléments** avec environ 3000 produits.
