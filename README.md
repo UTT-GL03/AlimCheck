@@ -583,3 +583,14 @@ La taille du DOM reste pratiquement identique à celle de la version précédent
 L'impact environnemental reste également faible, avec un EcoIndex compris entre **87,39 et 93,35** et des émissions estimées comprises entre **1,13 et 1,25 gCO2e**.
 
 Cette version montre ainsi que le chargement dynamique apporte un fonctionnement plus proche d'une application connectée à une API, au prix d'un nombre légèrement supérieur de requêtes réseau.
+## Simulation du passage à l'échelle
+
+Dans AlimCheck, l'augmentation de l'utilisation du service peut principalement entraîner une augmentation du nombre de produits disponibles dans le catalogue.
+
+Chaque produit contient plusieurs informations : nom, marque, catégorie, ingrédients, allergènes, valeurs nutritionnelles, labels et différents critères alimentaires.
+
+Pour simuler un passage à l'échelle sans modifier les fonctionnalités de l'application, nous allons donc augmenter le nombre de produits présents dans l'échantillon de données.
+
+Notre échantillon actuel contient quelques dizaines de produits. Pour la simulation, nous choisirons de multiplier ce volume par environ **100**, afin d'obtenir plusieurs milliers de produits.
+
+Cette augmentation est volontairement importante afin d'observer plus clairement son influence sur le poids des données, le nombre d'éléments affichés et l'EcoIndex de l'application.
