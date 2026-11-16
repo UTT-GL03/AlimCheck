@@ -583,14 +583,27 @@ La taille du DOM reste pratiquement identique à celle de la version précédent
 L'impact environnemental reste également faible, avec un EcoIndex compris entre **87,39 et 93,35** et des émissions estimées comprises entre **1,13 et 1,25 gCO2e**.
 
 Cette version montre ainsi que le chargement dynamique apporte un fonctionnement plus proche d'une application connectée à une API, au prix d'un nombre légèrement supérieur de requêtes réseau.
-## Simulation du passage à l'échelle
+### Évolution de l'EcoIndex lors du passage à l'échelle
 
-Dans AlimCheck, l'augmentation de l'utilisation du service peut principalement entraîner une augmentation du nombre de produits disponibles dans le catalogue.
+Afin d'évaluer l'effet d'une augmentation du volume de données, nous avons comparé le même scénario avec un échantillon initial de quelques dizaines de produits puis avec environ **3000 produits**.
 
-Chaque produit contient plusieurs informations : nom, marque, catégorie, ingrédients, allergènes, valeurs nutritionnelles, labels et différents critères alimentaires.
+Les mesures ont été réalisées avec GreenIT Analysis CLI en conservant exactement le même scénario.
 
-Pour simuler un passage à l'échelle sans modifier les fonctionnalités de l'application, nous allons donc augmenter le nombre de produits présents dans l'échantillon de données.
+| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
+|---|---|---:|---:|---:|---:|
+| 1. Consulter la liste des produits | 83 A → 34 E | 1,34 → 2,32 | 164 → 21 017 | 4 → 5 | 362,837 → 2299,5 |
+| 2. Choisir un premier produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
+| 3. Revenir à la liste des produits | 86 A → 36 D | 1,28 → 2,28 | 164 → 21 017 | 1 → 1 | 13,92 → 1940,817 |
+| 4. Choisir un deuxième produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
 
-Notre échantillon actuel contient quelques dizaines de produits. Pour la simulation, nous choisirons de multiplier ce volume par environ **100**, afin d'obtenir plusieurs milliers de produits.
+Le passage à l'échelle entraîne une forte dégradation de l'EcoIndex des pages présentant la liste des produits. Au premier chargement, l'EcoIndex passe de **83 A à 34 E**, tandis que lors du retour à la liste il passe de **86 A à 36 D**.
 
-Cette augmentation est volontairement importante afin d'observer plus clairement son influence sur le poids des données, le nombre d'éléments affichés et l'EcoIndex de l'application.
+Cette évolution s'explique principalement par l'augmentation très importante de la taille du DOM. La liste contient seulement **164 éléments DOM** avec le petit échantillon, contre **21 017 éléments** avec environ 3000 produits.
+
+Les pages de détail conservent en revanche une structure beaucoup plus légère, avec **53 éléments DOM** avant comme après le passage à l'échelle. Leur EcoIndex diminue donc moins fortement, de **90 A à 81 A**.
+
+Cependant, leur poids téléchargé augmente également fortement. Celui-ci passe d'environ **13,92 Ko à 1940,817 Ko**. Cela s'explique par le fait que le frontend récupère le fichier `sample_data.json` contenant l'ensemble du catalogue, même lorsqu'un seul produit doit être affiché.
+
+Ces résultats montrent qu'une augmentation importante du nombre de produits met en évidence deux limites de l'architecture actuelle : l'affichage de l'ensemble des produits simultanément et le chargement du catalogue complet pour consulter une seule ressource.
+
+Une évolution future pourrait donc consister à paginer ou virtualiser la liste et à ne récupérer que les données réellement nécessaires à la page consultée.
