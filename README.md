@@ -598,6 +598,8 @@ Les mesures ont été réalisées avec GreenIT Analysis CLI en conservant exacte
 | 2. Choisir un premier produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
 | 3. Revenir à la liste des produits | 86 A → 36 D | 1,28 → 2,28 | 164 → 21 017 | 1 → 1 | 13,92 → 1940,817 |
 | 4. Choisir un deuxième produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
+
+
 *Tab. 5 : Effet du passage à l'échelle sur l'impact du scénario prioritaire d'AlimCheck.*
 Le passage à l'échelle entraîne une forte dégradation de l'EcoIndex des pages présentant la liste des produits. Au premier chargement, l'EcoIndex passe de **83 A à 34 E**, tandis que lors du retour à la liste il passe de **86 A à 36 D**.
 
