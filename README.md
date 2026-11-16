@@ -570,7 +570,7 @@ Le scénario prioritaire reste inchangé afin de pouvoir comparer les résultats
 | 3. Revenir à la liste des produits | 87,39 A | 1,25 | 199 | 7 | 107 |
 | 4. Consulter Flocons d'avoine | 93,07 A | 1,14 | 53 | 8 | 109 |
 
-*Tab. 3 : Évaluation de l'impact du scénario prioritaire avec le chargement dynamique des données.*
+*Tab. 4 : Évaluation de l'impact du scénario prioritaire avec le chargement dynamique des données.*
 
 Les résultats restent globalement proches de ceux obtenus avec la version v1.0.0 et toutes les étapes conservent une classe **A** avec EcoIndex.
 
