@@ -517,9 +517,9 @@ Le scénario prioritaire reste inchangé afin de pouvoir comparer les résultats
 | Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) | Explication |
 |---|---:|---:|---:|---:|---:|---|
 | 1. Consulter la liste des produits | 87,67 A | 1,25 | 199 | 5 | 103 | Une requête supplémentaire apparaît pour récupérer `sample_data.json` avec `fetch()`. |
-| 2. Consulter Chocolat noir 70 % | 93,35 A | 1,13 | 53 | 6 | Le changement de page entraîne une nouvelle récupération des données ; le DOM reste faible car un seul produit est affiché. |
-| 3. Revenir à la liste des produits | 87,39 A | 1,25 | 199 | 7 | Le retour à la liste recharge les données et affiche de nouveau plusieurs produits. |
-| 4. Consulter Flocons d'avoine | 93,07 A | 1,14 | 53 | 8 | Une nouvelle récupération des données est effectuée pour la seconde fiche produit. |
+| 2. Consulter Chocolat noir 70 % | 93,35 A | 1,13 | 53 | 6 | 105 | Le changement de page entraîne une nouvelle récupération des données ; le DOM reste faible car un seul produit est affiché. |
+| 3. Revenir à la liste des produits | 87,39 A | 1,25 | 199 | 7 | 107 | Le retour à la liste recharge les données et affiche de nouveau plusieurs produits. |
+| 4. Consulter Flocons d'avoine | 93,07 A | 1,14 | 53 | 8 | 109 | Une nouvelle récupération des données est effectuée pour la seconde fiche produit. |
 
 *Tab. 4 : Évaluation de l'impact du scénario prioritaire avec le chargement dynamique des données.*
 
