@@ -58,3 +58,16 @@ jobs:
         with:
           name: EcoIndex
           path: Consulterlesproduits.html
+      - name: Generate sample
+        run: |
+          cd frontend
+          npx --yes dummy-json sample_data.hbs > frontend/public/sample_data.json
+      - name: Run GreenIT Analysis CLI
+  run: |
+    greenit analyse --format html --ci scenarios/consult_products.yml
+    - name: Save GreenIT results
+  uses: actions/upload-artifact@v4
+  with:
+    name: EcoIndex
+    path: |
+      *.html
