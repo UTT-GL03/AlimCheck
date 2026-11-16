@@ -1,0 +1,23 @@
+- name: Consulter les produits
+  url: http://localhost/products
+  waitForSelector: .product-grid article
+
+  actions:
+
+    - name: Choisir un premier produit
+      type: click
+      element: .product-grid article:nth-child(1) h3 a
+      pageChange: true
+      waitForSelector: article h2
+
+    - name: Revenir aux produits
+      type: click
+      element: nav a
+      pageChange: true
+      waitForSelector: .product-grid article
+
+    - name: Choisir un deuxième produit
+      type: click
+      element: .product-grid article:nth-child(2) h3 a
+      pageChange: true
+      waitForSelector: article h2

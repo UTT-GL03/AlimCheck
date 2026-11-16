@@ -23,6 +23,10 @@ jobs:
           cd frontend
           npm install
 
+      - name: Generate sample
+        run: |
+          npx --yes dummy-json sample_data.hbs > frontend/public/sample_data.json
+
       - name: Build frontend
         run: |
           cd frontend
@@ -32,10 +36,25 @@ jobs:
         run: |
           docker compose up --detach
 
+      - name: Install GreenIT Analysis CLI
+        run: |
+          wget https://github.com/cnumr/GreenIT-Analysis-cli/archive/refs/heads/master.zip
+          unzip master.zip
+          cd GreenIT-Analysis-cli-master
+          npm install
+          npm link
+
       - name: Wait for frontend
         uses: docker://benel/wait-for-response:1
         with:
           args: http://localhost/ 200 30000 500
 
-      - name: Watch frontend initial payload
-        run: curl --silent localhost
+      - name: Run GreenIT Analysis CLI
+        run: |
+          greenit analyse --format html --ci scenarios/consult_products.yml
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: EcoIndex
+          path: Consulterlesproduits.html
