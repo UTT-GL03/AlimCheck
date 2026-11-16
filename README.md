@@ -4,7 +4,6 @@ AlimCheck est une application Web de recherche et de comparaison de produits ali
 
 Elle permet aux utilisateurs de rechercher un aliment par son nom, sa marque ou sa catégorie, puis de consulter et comparer ses caractéristiques selon plusieurs critères : ingrédients, valeurs nutritionnelles, allergènes, présence d'additifs, certification bio, information ou certification halal lorsqu'elle est disponible, régime vegan/végétarien, sans gluten, sans lactose, origine du produit ou encore certains critères environnementaux.
 
-
 ## Choix du sujet
 
 Nous avons choisi ce sujet car l'alimentation occupe une place importante dans la vie quotidienne et il est parfois difficile pour les consommateurs de trouver rapidement des informations fiables et compréhensibles sur les produits qu'ils achètent.
@@ -12,7 +11,6 @@ Nous avons choisi ce sujet car l'alimentation occupe une place importante dans l
 Aujourd'hui, lorsqu'une personne veut vérifier la composition d'un produit ou le comparer avec d'autres, elle doit souvent lire les étiquettes, consulter plusieurs sites ou utiliser différentes applications. Cela prend du temps et rend la comparaison moins simple.
 
 AlimCheck a pour objectif de regrouper ces informations dans une seule application afin d'aider l'utilisateur à mieux comprendre les produits alimentaires et à faire un choix plus adapté à ses besoins.
-
 
 ## Utilité sociale
 
@@ -23,7 +21,6 @@ L'utilité sociale d'AlimCheck repose sur plusieurs aspects :
 - **Prise en compte des contraintes personnelles** : chaque utilisateur peut filtrer les produits selon ses propres critères, comme la présence d'allergènes, le bio, le vegan ou l'information halal.
 - **Aide à la comparaison** : l'application facilite la comparaison entre plusieurs produits sans devoir consulter plusieurs sources.
 - **Consommation plus réfléchie** : en rendant les informations plus accessibles, AlimCheck encourage des choix plus informés.
-
 
 ## Effets de la numérisation
 
@@ -64,7 +61,6 @@ L'application nécessite notamment :
 
 Le service doit donc rester simple, léger et limité aux fonctionnalités réellement utiles.
 
-
 ## Substitution à des pratiques existantes
 
 AlimCheck peut se substituer à certaines pratiques actuelles.
@@ -79,7 +75,6 @@ Aujourd'hui, un utilisateur peut :
 AlimCheck pourrait rassembler une partie de ces démarches dans un seul outil.
 
 Cependant, cette substitution n'est pas forcément totale. Si l'utilisateur continue à utiliser les autres sites ou applications en plus d'AlimCheck, alors le service ne remplace pas réellement les pratiques existantes : il s'y ajoute simplement.
-
 
 ## Impact indirect et comportements des usagers
 
@@ -100,7 +95,6 @@ Il existe également un risque si l'application met trop en avant de nouveaux pr
 
 L'application devra donc éviter d'ajouter des fonctionnalités inutiles ou trop gourmandes en ressources et se concentrer sur l'essentiel.
 
-
 ## Démocratie technique
 
 AlimCheck ne doit pas décider à la place de l'utilisateur.
@@ -118,7 +112,6 @@ Par exemple, certains utilisateurs vont privilégier :
 
 L'application doit donc laisser une liberté de choix importante, rester compréhensible et signaler clairement lorsqu'une information n'est pas disponible.
 
-
 ## Scénarios d'usage et impact
 
 Nous avons retenu deux scénarios représentant deux usages différents d'un service de recherche d'informations alimentaires.
@@ -132,7 +125,6 @@ Nous avons retenu deux scénarios représentant deux usages différents d'un ser
 3. Consulter les **ingrédients**, les **allergènes** et les **valeurs nutritionnelles**.
 4. Revenir à la liste des résultats.
 
-
 ### Scénario 2 : Comparer des produits selon leurs caractéristiques
 
 **Cas étudié :** rechercher une catégorie de produits, par exemple **céréales**, afin de comparer plusieurs produits selon leurs caractéristiques.
@@ -144,7 +136,6 @@ Nous avons retenu deux scénarios représentant deux usages différents d'un ser
 5. Sélectionner un deuxième produit.
 6. Comparer les informations disponibles : **sucre, protéines, ingrédients, allergènes, bio ou autres labels**.
 
-
 ## Impact de l'exécution des scénarios auprès de différents services concurrents
 
 L'EcoIndex d'une page est calculé en fonction de plusieurs indicateurs, notamment :
@@ -155,10 +146,10 @@ L'EcoIndex d'une page est calculé en fonction de plusieurs indicateurs, notamme
 
 Nous avons choisi de comparer l'impact de nos scénarios sur deux services proposant des fonctionnalités proches d'AlimCheck : **Open Food Facts** et **FatSecret**.
 
-| Service | Score EcoIndex moyen (sur 100) | Classe | Détail des mesures |
-|---|---:|:---:|---|
-| Open Food Facts | 23,44 | F | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
-| FatSecret | 59,08 | C | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) |
+| Service | Score EcoIndex moyen (sur 100) | Classe | Détail des mesures | Explication |
+|---|---:|:---:|---|---|
+| Open Food Facts | 23,44 | F | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) | Les pages étudiées présentent un DOM important, de nombreuses requêtes et un poids relativement élevé. |
+| FatSecret | 59,08 | C | [Scénario 1](benchmark/scenario1-nutella.csv) / [Scénario 2](benchmark/scenario2-cereales.csv) | Le DOM et le poids des pages sont plus faibles que ceux observés sur Open Food Facts, ce qui améliore l'EcoIndex moyen. |
 
 *Tab. 1 : EcoIndex moyen obtenu par Open Food Facts et FatSecret sur les deux scénarios étudiés.*
 
@@ -186,7 +177,6 @@ Pour la conception d'AlimCheck, nous chercherons donc à :
 
 L'objectif est de proposer un service plus sobre que les services existants étudiés.
 
-
 ## Modèle économique
 
 Le modèle économique d'AlimCheck doit permettre de garantir la viabilité du service tout en restant cohérent avec notre objectif de sobriété numérique.
@@ -202,7 +192,6 @@ AlimCheck cherche à se différencier en regroupant dans une même application p
 Il existe également plusieurs produits de substitution : l'utilisateur peut consulter directement l'étiquette d'un produit, utiliser un moteur de recherche ou consulter une autre application alimentaire.
 
 Nous pouvons donc considérer qu'AlimCheck évolue dans un marché de **concurrence monopolistique** : plusieurs offreurs proposent des services proches mais différenciés.
-
 
 ### Modèle retenu pour AlimCheck
 
@@ -224,7 +213,6 @@ Le financement principal pourrait donc reposer sur les abonnements Premium.
 
 Des subventions publiques pourraient également compléter ce financement, notamment dans le cadre de projets liés à l'information des consommateurs, à la transition numérique ou à la consommation responsable.
 
-
 ### Choix liés à l'impact environnemental
 
 Nous ne souhaitons pas baser principalement AlimCheck sur la publicité.
@@ -241,13 +229,11 @@ Notre modèle repose donc principalement sur :
 
 Ce modèle permettrait de financer le développement, l'hébergement, la maintenance et les ressources humaines nécessaires au fonctionnement d'AlimCheck tout en limitant les fonctionnalités susceptibles d'augmenter inutilement son impact environnemental.
 
-
 ## Maquette de l'interface et échantillon de données
 
 Au vu des services comparés, des scénarios retenus et des objectifs de sobriété définis précédemment, nous allons définir les principales ressources Web manipulées par AlimCheck.
 
 L'application n'est pas pensée uniquement comme un ensemble de pages, mais comme un ensemble de **ressources identifiées par des URI**, pouvant disposer de différentes représentations et être reliées entre elles.
-
 
 ### Types de ressources
 
@@ -272,7 +258,6 @@ Exemple :
 
 Cette URI identifie le produit lui-même, indépendamment de la manière dont celui-ci est représenté à l'utilisateur.
 
-
 ### Recherche et filtrage
 
 La recherche correspond à une représentation filtrée de la collection de produits.
@@ -292,7 +277,6 @@ ou :
 `/products?q=chocolat&sans_gluten=true`
 
 Ces paramètres permettent de conserver des URI compréhensibles et directement liées aux critères sélectionnés par l'utilisateur.
-
 
 ### Représentations des ressources
 
@@ -324,7 +308,6 @@ Lorsqu'une information n'est pas connue ou vérifiée, l'application indiquera q
 
 La représentation JSON contiendra ces informations sous une forme structurée.
 
-
 ### Liens entre les ressources
 
 Les représentations contiendront également des liens vers les autres ressources associées.
@@ -349,13 +332,11 @@ peut contenir des liens vers :
 
 Ainsi, l'utilisateur peut naviguer d'une ressource à une autre sans devoir effectuer systématiquement une nouvelle recherche.
 
-
 ### Découpage de l'interface en composants
 
 À partir de la maquette, nous avons identifié les principaux composants métiers réutilisables de l'application.
 
 Nous retenons deux types de pages principales.
-
 
 #### ProductListPage
 
@@ -367,7 +348,6 @@ Elle est composée de :
 - `SearchBar` : recherche par nom, marque ou catégorie ;
 - `FilterPanel` : sélection des différents critères de filtrage ;
 - `ProductList` : affichage de la liste des produits correspondant à la recherche.
-
 
 #### ProductPage
 
@@ -384,7 +364,6 @@ Elle est composée de :
 
 *Fig. 1 : Découpage de l'interface AlimCheck en composants React : (a) page de recherche et liste des produits ; (b) page de consultation d'un produit.*
 
-
 ### Échantillon de données
 
 Afin de construire le prototype d'AlimCheck sans dépendre immédiatement d'une base de données externe, nous avons généré un échantillon de données avec `dummy-json`.
@@ -400,21 +379,21 @@ Le modèle contient les principales informations manipulées par l'application :
 - labels ;
 - critères alimentaires.
 
-L'échantillon contient plusieurs produits fictifs possédant une structure proche des données qui seront nécessaires au prototype.
+Les données générées sont fictives et possèdent une structure proche de celle qui sera nécessaire au prototype.
 
-Les données générées sont utilisées uniquement pour le développement et le test de l'interface. Elles ne doivent donc pas être considérées comme des informations réelles sur des produits existants.
+Elles sont utilisées uniquement pour le développement, les tests et les mesures d'impact. Elles ne doivent donc pas être considérées comme des informations réelles sur des produits existants.
 
 - [Modèle de génération](./sample_data.hbs)
-- [Échantillon de données généré](./sample_data.json)
-  ## Implémentation du scénario prioritaire
+
+Le fichier `sample_data.json` est généré automatiquement à partir de ce modèle lors de l'intégration continue. Il n'est plus versionné directement dans le dépôt.
+
+## Implémentation du scénario prioritaire
 
 ### Étape de prototypage : données chargées de manière statique
 
-Pour cette première version du prototype (v1.0.0), les données sont chargées
-localement à partir de `sample_data.json`.
+Pour cette première version du prototype (**v1.0.0**), les données sont chargées localement à partir de `sample_data.json`.
 
-Les fonctionnalités implémentées sont volontairement limitées à celles
-nécessaires au scénario prioritaire :
+Les fonctionnalités implémentées sont volontairement limitées à celles nécessaires au scénario prioritaire :
 
 - consulter la liste des produits ;
 - sélectionner un produit ;
@@ -426,61 +405,46 @@ Deux types de pages sont ainsi implémentés :
 - `/products` : page de liste des produits ;
 - `/products/{id}` : page détaillée d'un produit.
 
-
 ### Page de liste des produits
 
-La page `/products` affiche l'échantillon de produits sous une forme simple,
-proche de la maquette définie précédemment.
+La page `/products` affiche l'échantillon de produits sous une forme simple, proche de la maquette définie précédemment.
 
-<img width="1270" height="919" alt="Prototype de la fiche détaillée d'un produit AlimCheck" src="https://github.com/user-attachments/assets/aedd078a-4a87-488a-aafd-8a528d0502ba" />
+<img width="893" height="916" alt="Prototype de la liste des produits AlimCheck" src="https://github.com/user-attachments/assets/2ff9e972-0b86-4ab3-86e5-1fb2970f441e" />
 
 *Fig. 2 : Prototype de la page de liste des produits.*
 
-Dans un objectif de sobriété, nous utilisons PicoCSS et avons choisi de ne pas
-inclure d'images de produits dans cette première version.
+Dans un objectif de sobriété, nous utilisons PicoCSS et avons choisi de ne pas inclure d'images de produits dans cette première version.
 
-Nous évitons également les publicités, les traceurs et les ressources tierces
-non nécessaires.
+Nous évitons également les publicités, les traceurs et les ressources tierces non nécessaires.
 
-À ce stade, les données étant encore chargées statiquement, l'évaluation ne
-représente pas encore l'ensemble de l'impact d'une future application connectée
-à un backend.
+À ce stade, les données étant encore chargées statiquement, l'évaluation ne représente pas encore l'ensemble de l'impact d'une future application connectée à un backend.
 
-Elle permet néanmoins d'évaluer l'impact de l'affichage des données et des
-ressources nécessaires au frontend.
-
+Elle permet néanmoins d'évaluer l'impact de l'affichage des données et des ressources nécessaires au frontend.
 
 ### Impact estimé de la page de liste
 
-Nous avons mesuré la page de liste des produits dans deux configurations :
-le mode de développement de Vite et le mode pré-production après génération
-du build.
+Nous avons mesuré la page de liste des produits dans deux configurations : le mode de développement de Vite et le mode pré-production après génération du build.
 
-| Mode | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
-|---|---:|---:|---:|---:|---:|
-| Développement | 71,79 B | 1,56 | 203 | 20 | 5573 |
-| Pré-production | 87,82 A | 1,24 | 199 | 4 | 100 |
+| Mode | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) | Explication |
+|---|---:|---:|---:|---:|---:|---|
+| Développement | 71,79 B | 1,56 | 203 | 20 | 5573 | Le serveur de développement Vite charge des ressources supplémentaires nécessaires au développement, ce qui augmente le nombre de requêtes et le poids de la page. |
+| Pré-production | 87,82 A | 1,24 | 199 | 4 | 100 | Le build de production optimise et regroupe les ressources, ce qui réduit fortement le nombre de requêtes et le poids transféré. |
 
 *Tab. 2 : Évaluation de l'impact du prototype de la page de liste des produits.*
 
 Le passage en pré-production améliore nettement les résultats.
 
-L'EcoIndex passe de **71,79 (B)** à **87,82 (A)**, tandis que le nombre
-de requêtes passe de **20 à 4**.
+L'EcoIndex passe de **71,79 (B)** à **87,82 (A)**, tandis que le nombre de requêtes passe de **20 à 4**.
 
 La taille de la page diminue également fortement, de **5573 Ko à 100 Ko**.
 
-La taille du DOM reste presque identique, avec **203 éléments** en développement
-contre **199 éléments** en pré-production.
+La taille du DOM reste presque identique, avec **203 éléments** en développement contre **199 éléments** en pré-production.
 
-Cette différence s'explique principalement par l'optimisation des ressources
-effectuée lors de la construction de la version de production.
-
+Cette différence s'explique principalement par l'optimisation des ressources effectuée lors de la construction de la version de production.
 
 ### Page détaillée d'un produit
 
-La page `/products/{id}` permet de consulter les informations détaillées
-d'un produit sélectionné depuis la liste.
+La page `/products/{id}` permet de consulter les informations détaillées d'un produit sélectionné depuis la liste.
 
 Elle affiche notamment :
 
@@ -491,18 +455,15 @@ Elle affiche notamment :
 - les valeurs nutritionnelles ;
 - certaines caractéristiques alimentaires.
 
-<img width="893" height="916" alt="Prototype de la liste des produits AlimCheck" src="https://github.com/user-attachments/assets/2ff9e972-0b86-4ab3-86e5-1fb2970f441e" />
+<img width="1270" height="919" alt="Prototype de la fiche détaillée d'un produit AlimCheck" src="https://github.com/user-attachments/assets/aedd078a-4a87-488a-aafd-8a528d0502ba" />
 
 *Fig. 3 : Prototype de la page détaillée d'un produit.*
 
-Un lien permet de revenir directement à la liste des produits, ce qui permet
-d'exécuter le parcours principal de navigation prévu dans cette première
-version du prototype.
+Un lien permet de revenir directement à la liste des produits, ce qui permet d'exécuter le parcours principal de navigation prévu dans cette première version du prototype.
+
 ### Évaluation de l'impact du scénario prioritaire
 
-Avec l'ajout de la page détaillée d'un produit et de la navigation entre les deux
-types de pages, il devient possible d'exécuter le scénario prioritaire complet
-et d'en mesurer l'impact.
+Avec l'ajout de la page détaillée d'un produit et de la navigation entre les deux types de pages, il devient possible d'exécuter le scénario prioritaire complet et d'en mesurer l'impact.
 
 Le scénario mesuré est le suivant :
 
@@ -511,38 +472,28 @@ Le scénario mesuré est le suivant :
 3. revenir à la liste des produits ;
 4. choisir et consulter un autre produit.
 
-| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
-|---|---:|---:|---:|---:|---:|
-| 1. Consulter la liste des produits | 87,82 A | 1,24 | 199 | 4 | 100 |
-| 2. Choisir et consulter un produit | 93,63 A | 1,13 | 53 | 4 | 100 |
-| 3. Revenir à la liste des produits | 87,82 A | 1,24 | 199 | 4 | 100 |
-| 4. Choisir et consulter un autre produit | 93,63 A | 1,13 | 53 | 4 | 100 |
+| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) | Explication |
+|---|---:|---:|---:|---:|---:|---|
+| 1. Consulter la liste des produits | 87,82 A | 1,24 | 199 | 4 | 100 | La liste affiche plusieurs produits simultanément, ce qui augmente le nombre d'éléments dans le DOM. |
+| 2. Choisir et consulter un produit | 93,63 A | 1,13 | 53 | 4 | 100 | La fiche ne présente qu'un seul produit et possède donc une structure DOM beaucoup plus légère. |
+| 3. Revenir à la liste des produits | 87,82 A | 1,24 | 199 | 4 | 100 | Le retour affiche de nouveau les différentes cartes produits et retrouve donc la complexité de la liste. |
+| 4. Choisir et consulter un autre produit | 93,63 A | 1,13 | 53 | 4 | 100 | Comme pour la première fiche, un seul produit est affiché, ce qui limite la taille du DOM. |
 
 *Tab. 3 : Évaluation de l'impact du scénario prioritaire dans le prototype AlimCheck v1.0.0.*
 
-Les résultats obtenus sont globalement très bons puisque toutes les étapes du
-scénario sont classées **A** par EcoIndex.
+Les résultats obtenus sont globalement très bons puisque toutes les étapes du scénario sont classées **A** par EcoIndex.
 
-La page de liste des produits obtient un EcoIndex de **87,82**, avec
-**199 éléments dans le DOM**, tandis que les pages détaillées obtiennent un
-EcoIndex de **93,63**, avec seulement **53 éléments dans le DOM**.
+La page de liste des produits obtient un EcoIndex de **87,82**, avec **199 éléments dans le DOM**, tandis que les pages détaillées obtiennent un EcoIndex de **93,63**, avec seulement **53 éléments dans le DOM**.
 
-La différence entre les deux types de pages s'explique principalement par la
-complexité de l'interface. La liste doit afficher plusieurs produits
-simultanément, ce qui augmente le nombre d'éléments présents dans le DOM.
-À l'inverse, la fiche détaillée ne présente qu'un seul produit et possède donc
-une structure beaucoup plus légère.
+La différence entre les deux types de pages s'explique principalement par la complexité de l'interface. La liste doit afficher plusieurs produits simultanément, ce qui augmente le nombre d'éléments présents dans le DOM.
 
-Le nombre de requêtes reste stable à **4** pour chaque étape et la taille
-mesurée de la page reste de **100 Ko**.
+À l'inverse, la fiche détaillée ne présente qu'un seul produit et possède donc une structure beaucoup plus légère.
 
-Les émissions estimées sont également légèrement plus faibles sur les pages
-de détail, avec **1,13 gCO2e**, contre **1,24 gCO2e** pour la liste des produits.
+Les émissions estimées sont également légèrement plus faibles sur les pages de détail, avec **1,13 gCO2e**, contre **1,24 gCO2e** pour la liste des produits.
 
-Ces résultats montrent que le prototype v1.0.0 reste relativement sobre pour
-l'ensemble du scénario prioritaire. Le choix d'une interface simple, sans
-images de produits, sans publicité et sans ressources tierces non nécessaires
-contribue à limiter son impact.
+Ces résultats montrent que le prototype v1.0.0 reste relativement sobre pour l'ensemble du scénario prioritaire.
+
+Le choix d'une interface simple, sans images de produits, sans publicité et sans ressources tierces non nécessaires contribue à limiter son impact.
 
 ### Étape de prototypage : données statiques chargées de manière dynamique
 
@@ -563,12 +514,12 @@ Le scénario prioritaire reste inchangé afin de pouvoir comparer les résultats
 
 ### Impact estimé du scénario prioritaire — v1.0.1
 
-| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
-|---|---:|---:|---:|---:|---:|
-| 1. Consulter la liste des produits | 87,67 A | 1,25 | 199 | 5 | 103 |
-| 2. Consulter Chocolat noir 70 % | 93,35 A | 1,13 | 53 | 6 | 105 |
-| 3. Revenir à la liste des produits | 87,39 A | 1,25 | 199 | 7 | 107 |
-| 4. Consulter Flocons d'avoine | 93,07 A | 1,14 | 53 | 8 | 109 |
+| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) | Explication |
+|---|---:|---:|---:|---:|---:|---|
+| 1. Consulter la liste des produits | 87,67 A | 1,25 | 199 | 5 | 103 | Une requête supplémentaire apparaît pour récupérer `sample_data.json` avec `fetch()`. |
+| 2. Consulter Chocolat noir 70 % | 93,35 A | 1,13 | 53 | 6 | Le changement de page entraîne une nouvelle récupération des données ; le DOM reste faible car un seul produit est affiché. |
+| 3. Revenir à la liste des produits | 87,39 A | 1,25 | 199 | 7 | Le retour à la liste recharge les données et affiche de nouveau plusieurs produits. |
+| 4. Consulter Flocons d'avoine | 93,07 A | 1,14 | 53 | 8 | Une nouvelle récupération des données est effectuée pour la seconde fiche produit. |
 
 *Tab. 4 : Évaluation de l'impact du scénario prioritaire avec le chargement dynamique des données.*
 
@@ -583,32 +534,87 @@ La taille du DOM reste pratiquement identique à celle de la version précédent
 L'impact environnemental reste également faible, avec un EcoIndex compris entre **87,39 et 93,35** et des émissions estimées comprises entre **1,13 et 1,25 gCO2e**.
 
 Cette version montre ainsi que le chargement dynamique apporte un fonctionnement plus proche d'une application connectée à une API, au prix d'un nombre légèrement supérieur de requêtes réseau.
-Dans le cas d'AlimCheck, l'évolution du service entraînera principalement une augmentation du nombre de produits référencés dans le catalogue. De nouvelles marques et références pourront être ajoutées progressivement afin d'améliorer la couverture du service.
 
-Pour simuler cette évolution et rendre ses effets mesurables, nous avons choisi de multiplier approximativement par 100 la taille de notre échantillon, en passant de quelques dizaines de produits à environ **3000 produits**.
+Les nombres de requêtes de ce tableau correspondent aux mesures cumulées observées manuellement lors de la navigation. Les mesures du passage à l'échelle présentées ensuite sont réalisées avec GreenIT Analysis CLI, qui fournit les requêtes associées à chaque étape du scénario. Ces deux séries de mesures ne sont donc pas directement comparables requête par requête.
+
+## Simulation du passage à l'échelle
+
+### Hypothèse d'évolution du catalogue
+
+Pour simuler le passage à l'échelle d'AlimCheck, nous avons imaginé une augmentation progressive du nombre de produits référencés dans le catalogue.
+
+Nous faisons l'hypothèse qu'environ **25 nouveaux produits peuvent être ajoutés chaque jour**.
+
+Sur une période de **4 mois**, soit environ **120 jours**, cela représente :
+
+**25 × 120 = 3000 produits**
+
+Nous avons donc choisi de générer environ **3000 produits** afin de représenter un ordre de grandeur correspondant à l'évolution du catalogue après quatre mois d'utilisation.
+
+Cette hypothèse ne constitue pas une prévision exacte de l'utilisation future du service. Elle permet surtout de simuler une augmentation importante du volume de données et d'observer ses conséquences sur l'impact environnemental du prototype.
+
 ### Évolution de l'EcoIndex lors du passage à l'échelle
 
-Afin d'évaluer l'effet d'une augmentation du volume de données, nous avons comparé le même scénario avec un échantillon initial de quelques dizaines de produits puis avec environ **3000 produits**.
+Afin d'évaluer l'effet de cette augmentation du volume de données, nous avons comparé le même scénario avec l'échantillon initial de quelques dizaines de produits puis avec environ **3000 produits**.
 
-Les mesures ont été réalisées avec GreenIT Analysis CLI en conservant exactement le même scénario.
+Les mesures ont été réalisées avec **GreenIT Analysis CLI** en conservant exactement le même scénario.
 
-| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) |
-|---|---|---:|---:|---:|---:|
-| 1. Consulter la liste des produits | 83 A → 34 E | 1,34 → 2,32 | 164 → 21 017 | 4 → 5 | 362,837 → 2299,5 |
-| 2. Choisir un premier produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
-| 3. Revenir à la liste des produits | 86 A → 36 D | 1,28 → 2,28 | 164 → 21 017 | 1 → 1 | 13,92 → 1940,817 |
-| 4. Choisir un deuxième produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 |
-
+| Étape du scénario | EcoIndex | GES (gCO2e) | Taille du DOM | Requêtes | Taille de la page (Ko) | Explication |
+|---|---|---:|---:|---:|---:|---|
+| 1. Consulter la liste des produits | 83 A → 34 E | 1,34 → 2,32 | 164 → 21 017 | 4 → 5 | 362,837 → 2299,5 | Les milliers de produits sont affichés simultanément, ce qui augmente très fortement le nombre d'éléments du DOM et le volume des données. |
+| 2. Choisir un premier produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 | La fiche garde un DOM léger, mais le fichier JSON contenant l'ensemble du catalogue est récupéré pour afficher un seul produit. |
+| 3. Revenir à la liste des produits | 86 A → 36 D | 1,28 → 2,28 | 164 → 21 017 | 1 → 1 | 13,92 → 1940,817 | Le retour reconstruit la liste contenant les milliers de produits, ce qui augmente de nouveau fortement le DOM. |
+| 4. Choisir un deuxième produit | 90 A → 81 A | 1,20 → 1,38 | 53 → 53 | 1 → 1 | 13,92 → 1940,817 | La fiche reste simple mais le catalogue complet est encore récupéré pour consulter un seul produit. |
 
 *Tab. 5 : Effet du passage à l'échelle sur l'impact du scénario prioritaire d'AlimCheck.*
-Le passage à l'échelle entraîne une forte dégradation de l'EcoIndex des pages présentant la liste des produits. Au premier chargement, l'EcoIndex passe de **83 A à 34 E**, tandis que lors du retour à la liste il passe de **86 A à 36 D**.
 
-Cette évolution s'explique principalement par l'augmentation très importante de la taille du DOM. La liste contient seulement **164 éléments DOM** avec le petit échantillon, contre **21 017 éléments** avec environ 3000 produits.
+Le passage à l'échelle entraîne une forte dégradation de l'EcoIndex des pages présentant la liste des produits.
 
-Les pages de détail conservent en revanche une structure beaucoup plus légère, avec **53 éléments DOM** avant comme après le passage à l'échelle. Leur EcoIndex diminue donc moins fortement, de **90 A à 81 A**.
+Au premier chargement, l'EcoIndex passe de **83 A à 34 E**, tandis que lors du retour à la liste il passe de **86 A à 36 D**.
 
-Cependant, leur poids téléchargé augmente également fortement. Celui-ci passe d'environ **13,92 Ko à 1940,817 Ko**. Cela s'explique par le fait que le frontend récupère le fichier `sample_data.json` contenant l'ensemble du catalogue, même lorsqu'un seul produit doit être affiché.
+Cette évolution s'explique principalement par l'augmentation très importante de la taille du DOM.
 
-Ces résultats montrent qu'une augmentation importante du nombre de produits met en évidence deux limites de l'architecture actuelle : l'affichage de l'ensemble des produits simultanément et le chargement du catalogue complet pour consulter une seule ressource.
+La liste contient seulement **164 éléments DOM** avec le petit échantillon, contre environ **21 017 éléments** avec 3000 produits.
+
+Les pages de détail conservent en revanche une structure beaucoup plus légère, avec **53 éléments DOM** avant comme après le passage à l'échelle.
+
+Leur EcoIndex diminue donc moins fortement, de **90 A à 81 A**.
+
+Cependant, leur poids téléchargé augmente également fortement.
+
+Celui-ci passe d'environ **13,92 Ko à près de 2 Mo**. Cela s'explique par le fait que le frontend récupère actuellement le fichier `sample_data.json` contenant l'ensemble du catalogue, même lorsqu'un seul produit doit être affiché.
+
+Ces résultats montrent qu'une augmentation importante du nombre de produits met en évidence deux limites de l'architecture actuelle :
+
+- l'affichage de l'ensemble des produits simultanément ;
+- le chargement du catalogue complet pour consulter une seule ressource.
 
 Une évolution future pourrait donc consister à paginer ou virtualiser la liste et à ne récupérer que les données réellement nécessaires à la page consultée.
+
+Les données étant générées aléatoirement avec `dummy-json`, le poids exact du fichier et certaines mesures peuvent légèrement varier entre deux exécutions. La tendance observée reste cependant identique : une forte augmentation du DOM sur la liste et du volume de données transférées.
+
+### Automatisation des mesures d'impact
+
+Afin de rendre les mesures reproductibles à chaque nouvelle version du projet, le scénario GreenIT a été intégré au workflow d'intégration continue de **GitHub Actions**.
+
+À chaque `push`, le workflow réalise automatiquement les opérations suivantes :
+
+1. récupération des sources du projet ;
+2. installation de Node.js et des dépendances ;
+3. génération de `sample_data.json` à partir de `sample_data.hbs` ;
+4. construction de la version de production avec `npm run build` ;
+5. démarrage du serveur nginx dans un conteneur Docker ;
+6. installation de GreenIT Analysis CLI ;
+7. exécution automatique du scénario `consult_products.yml` ;
+8. génération du rapport GreenIT ;
+9. publication du rapport HTML sous la forme d'un **artifact GitHub Actions**.
+
+Le fichier `sample_data.json` n'est donc plus stocké directement dans le dépôt Git.
+
+Il est généré automatiquement au moment de l'intégration continue à partir du modèle `sample_data.hbs`.
+
+Cette approche permet également d'éviter de versionner un fichier généré volumineux et de reproduire automatiquement la mesure d'impact à chaque nouvelle version du projet.
+
+Le rapport HTML produit par GreenIT Analysis CLI est disponible dans les **Artifacts** de l'exécution GitHub Actions correspondante.
+
+L'exécution automatisée avec environ 3000 produits confirme les tendances observées lors des mesures locales : la page de liste atteint environ **21 000 éléments DOM** et son EcoIndex se dégrade fortement, tandis que les fiches détaillées conservent une structure DOM beaucoup plus légère.
